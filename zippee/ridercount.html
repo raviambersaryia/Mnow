@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rider Count by Store</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/f5b0e8c2d4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="rider.css"><!-- keep your own styles -->
+</head>
+<body>
+    <header>
+    <div id="nav">
+        <span class="logo"> 
+            <i class="fa-solid fa-handshake-angle"></i>
+        <span>
+        <div class="menu-toggle" onclick="zippeeToggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-links">
+          <a class="home" href="index.html">Home</a>
+             <a class="home" href="ridercount.html">M_T Rider Count</a>
+                <a class="home" href="MT_Rider_Count_Bf.html">MT_Rider_Count_Bf</a>
+                <a class="home" href="Staff_Summary.html">MT Staff_Summary</a>
+                <a class="home" href="#">Fashion</a>
+                <a class="home" href="#">CONTACT</a>
+                
+        <div class="ani"><img src="PHOTOS/infinite2.jpg" height="30px" width="30px" alt=""></div>
+
+</header>
+    <div class="portfolio-container">
+                  
+    
+        <section class="nav_cls" id="home">
+            <div class="intro-section">
+                <div class="hii">
+                    <h2>
+                        Hii
+                        <span class="highlight">PROGRAMING WITH DATA ANALYTICS</span>
+                    </h2>
+                </div>
+                <div class="button">
+                    <button><a href="http://127.0.0.1:5500/html/Ass/contact.html">Contact</a></button>
+                </div>
+                <div class="follow">
+                    <a href="https://wa.me/8307365886" class="I_link">
+                        <i class="fa-brands fa-square-whatsapp fa-xl" style="color: #1fe55b;"></i>
+                    </a>
+                    <a href="tel:+918307062117" class="I_link">
+                        <i class="fa-solid fa-phone fa-xl" style="color: #3471da;"></i>
+                    </a>
+                    <a href="mailto:raviambersariya1@gmail.com" class="I_link">
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #1e7bc2;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ravi-kumar-6223b5280" class="I_link">
+                        <i class="fa-brands fa-linkedin fa-xl" style="color: #165cd4;"></i>
+                    </a>
+                    <!-- <a href="https://github.com/Ravi-Dhillayan" class="I_link">
+                        <i class="fa-brands fa-github fa-xl" style="color: #e1c6c9;"></i>
+                    </a> -->
+                </div>
+            </div>
+            <div class="imga">
+                <img src="PHOTOS/MY_.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+        </section>
+  <div class="container">
+    <h2>Rider Count by Store</h2>
+
+    <!-- file chooser + submit -->
+    <input type="file" id="riderFileInput" accept=".xlsx,.xls,.csv">
+    <button id="riderSubmitBtn">Submit</button>
+
+    <!-- live search box -->
+    <input
+      type="text"
+      id="riderSearch"
+      placeholder="Search by Store Name"
+      style="margin:20px 0;width:250px"
+    >
+
+    <!-- result table -->
+    <table id="riderTable">
+      <thead>
+        <tr><th>Store Name</th><th>Rider Count</th></tr>
+      </thead>
+      <tbody><!-- JS fills this --></tbody>
+    </table>
+  </div>
+
+  <!-- XLSX library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+  <!-- our logic -->
+  <script src="rider.js"></script>
+</body>
+</html>

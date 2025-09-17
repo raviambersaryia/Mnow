@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MT_Rider_Count_Bf</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+  }
+
+  #captureArea {
+    background: #fff;
+    margin: 32px auto 0 auto;
+    padding: 0;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    width: 98vw;
+    max-width: 540px;
+    min-width: 320px;
+    border: 1px solid #eee;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 0;
+    background: #fff;
+    table-layout: fixed;
+  }
+
+  th, td {
+    border: 1.5px solid #c26a00;
+    padding: 8px 4px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.15rem;
+    vertical-align: middle;
+    word-break: break-word;
+  }
+
+  thead th {
+    background-color: #ea6a15;
+    color: white;
+    font-size: 1.15rem;
+    letter-spacing: 0.5px;
+  }
+
+  td:first-child, th:first-child {
+    background-color: #fce3d6;
+    color: #222;
+    text-align: left;
+    font-size: 1.08rem;
+    font-weight: bold;
+    min-width: 120px;
+    max-width: 180px;
+  }
+
+  input {
+    font-size: 1.15rem;
+    width: 100%;
+    padding: 4px 0;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #222;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  tfoot td {
+    background-color: #de7544;
+    color: white;
+    font-weight: bold;
+    font-size: 1.15rem;
+    border-top: 2.5px solid #c26a00;
+  }
+
+  #timestamp {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #b34700;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+  }
+
+  .green {
+    background-color: #b4f1b4 !important;
+  }
+
+  .yellow {
+    background-color: #fff7b3 !important;
+  }
+
+  .red {
+    background-color: #f5a6a6 !important;
+  }
+
+  .avgCell {
+    font-weight: bold;
+  }
+
+  #shareButton {
+    display: block;
+    margin: 24px auto 0;
+    padding: 10px 24px;
+    font-size: 1.1rem;
+    background-color: #ea6a15;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+  }
+
+  #shareButton:hover {
+    background-color: #cc5605;
+  }
+
+  #socialSharePopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #socialSharePopup > div {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+  }
+
+  #socialSharePopup button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  #socialSharePopup h2 {
+    margin: 0 0 20px 0;
+  }
+
+  #socialSharePopup a {
+    display: inline-block;
+    margin: 0 15px;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #socialSharePopup a i {
+    font-size: 2rem;
+  }
+
+  #socialSharePopup .note {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+  </style>
+</head>
+<body>
+ <header>
+    <div id="nav">
+        <span class="logo"> 
+            <i class="fa-solid fa-handshake-angle"></i>
+        <span>
+        <div class="menu-toggle" onclick="zippeeToggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="nav-links">
+          <a class="home" href="index.html">Home</a>
+             <a class="home" href="ridercount.html">M_T Rider Count</a>
+                <a class="home" href="MT_Rider_Count_Bf.html">MT_Rider_Count_Bf</a>
+                <a class="home" href="Staff_Summary.html">MT Staff_Summary</a>
+                <a class="home" href="#">Fashion</a>
+                <a class="home" href="#">CONTACT</a>
+                
+        <div class="ani"><img src="PHOTOS/infinite2.jpg" height="30px" width="30px" alt=""></div>
+
+</header>
+    <div class="portfolio-container">
+                  
+    
+        <section class="nav_cls" id="home">
+            <div class="intro-section">
+                <div class="hii">
+                    <h2>
+                        Hii,
+                        <span class="highlight">PROGRAMING WITH DATA ANALYTICS</span>
+                    </h2>
+                </div>
+                <div class="button">
+                    <button><a href="http://127.0.0.1:5500/html/Ass/contact.html">Contact</a></button>
+                </div>
+                <div class="follow">
+                    <a href="https://wa.me/8307365886" class="I_link">
+                        <i class="fa-brands fa-square-whatsapp fa-xl" style="color: #1fe55b;"></i>
+                    </a>
+                    <a href="tel:+918307062117" class="I_link">
+                        <i class="fa-solid fa-phone fa-xl" style="color: #3471da;"></i>
+                    </a>
+                    <a href="mailto:raviambersariya1@gmail.com" class="I_link">
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #1e7bc2;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ravi-kumar-6223b5280" class="I_link">
+                        <i class="fa-brands fa-linkedin fa-xl" style="color: #165cd4;"></i>
+                    </a>
+                    <!-- <a href="https://github.com/Ravi-Dhillayan" class="I_link">
+                        <i class="fa-brands fa-github fa-xl" style="color: #e1c6c9;"></i>
+                    </a> -->
+                </div>
+            </div>
+            <div class="imga">
+                <img src="PHOTOS/MY_.jpg" alt="Profile Picture" class="profile-img">
+            </div>
+        </section>
+  <div id="captureArea">
+    <div id="timestamp">Time: --:--</div>
+    <table id="riderTable">
+      <thead>
+        <tr>
+          <th>DARKSTORE NAME</th>
+          <th>ACTIVE RIDERS</th>
+          <th>IDLE RIDERS</th>
+          <th>BF</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <tr><td>Kalyan nagar</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Basaweshwar Nagar Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Jakkur Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Begur Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Thyagaraja Nagar Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Brookfield Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>JP nagar Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Sarjapur road Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Manikonda Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Gachibowli Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Attapur Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Nizampet Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td id="totalActive">0</td>
+          <td id="totalIdle">0</td>
+          <td id="avgBf" class="avgCell">0.00</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <button id="shareButton">📸 Share Screenshot</button>
+
+  <div id="socialSharePopup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
+    <div style="background:#fff; padding:30px 40px; border-radius:16px; text-align:center; position:relative;">
+      <button onclick="document.getElementById('socialSharePopup').style.display='none'" style="position:absolute;top:10px;right:10px;font-size:24px;background:none;border:none;cursor:pointer;">&times;</button>
+      <h2>Share on</h2>
+      <div style="display:flex; gap:30px; justify-content:center; margin:20px 0;">
+        <a id="waShare" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp fa-2x" style="color:#25D366"></i></a>
+        <a id="tgShare" target="_blank" title="Telegram"><i class="fab fa-telegram fa-2x" style="color:#0088cc"></i></a>
+        <a id="fbShare" target="_blank" title="Facebook"><i class="fab fa-facebook fa-2x" style="color:#1877f3"></i></a>
+      </div>
+      <div style="font-size:14px;color:#888;">Instagram does not support direct web sharing.</div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script>
+    function updateTimestamp() {
+      const now = new Date();
+      const time = now.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute: '2-digit',
+      });
+      document.getElementById("timestamp").textContent = `Time: ${time}`;
+    }
+
+    setInterval(updateTimestamp, 60000);
+    updateTimestamp();
+
+    const inputs = document.querySelectorAll('input');
+    inputs.forEach((input, i) => {
+      input.addEventListener('keydown', (e) => {
+        const td = input.closest('td');
+        const tr = input.closest('tr');
+        const colIndex = [...tr.cells].indexOf(td);
+        let targetInput;
+
+        if (e.key === 'ArrowRight') {
+          targetInput = tr.cells[colIndex + 1]?.querySelector('input');
+        } else if (e.key === 'ArrowLeft') {
+          targetInput = tr.cells[colIndex - 1]?.querySelector('input');
+        } else if (e.key === 'ArrowDown') {
+          const nextRow = tr.nextElementSibling;
+          targetInput = nextRow?.cells[colIndex]?.querySelector('input');
+        } else if (e.key === 'ArrowUp') {
+          const prevRow = tr.previousElementSibling;
+          targetInput = prevRow?.cells[colIndex]?.querySelector('input');
+        } else if (e.key === 'Enter') {
+          e.preventDefault();
+          const nextInput = inputs[i + 1] || inputs[0];
+          nextInput.focus();
+          return;
+        }
+
+        if (targetInput) {
+          e.preventDefault();
+          targetInput.focus();
+        }
+      });
+
+      input.addEventListener('input', function () {
+        // If user enters only a dot, replace with 0
+        if (this.value === ".") {
+          this.value = "0.";
+        }
+        updateTable();
+      });
+    });
+
+    function updateTable() {
+      const rows = document.querySelectorAll('#tableBody tr');
+      let totalActive = 0;
+      let totalIdle = 0;
+      let bfValues = [];
+
+      rows.forEach(row => {
+        const [activeInput, idleInput, bfInput] = row.querySelectorAll('input');
+        const active = parseInt(activeInput.value) || 0;
+        const idle = parseInt(idleInput.value) || 0;
+        const bf = parseFloat(bfInput.value);
+
+        totalActive += active;
+        totalIdle += idle;
+
+        bfInput.classList.remove("green", "yellow", "red");
+
+        if (!isNaN(bf)) {
+          bfValues.push(bf);
+          if (bf <= 1.2) bfInput.classList.add("green");
+          else if (bf <= 1.5) bfInput.classList.add("yellow");
+          else bfInput.classList.add("red");
+        }
+      });
+
+      const avg = bfValues.length ? (bfValues.reduce((a, b) => a + b, 0) / bfValues.length) : 0;
+      const avgBfCell = document.getElementById("avgBf");
+
+      avgBfCell.textContent = avg.toFixed(2);
+      avgBfCell.classList.remove("green", "yellow", "red");
+
+      if (avg <= 1.2) avgBfCell.classList.add("green");
+      else if (avg <= 1.5) avgBfCell.classList.add("yellow");
+      else avgBfCell.classList.add("red");
+
+      document.getElementById("totalActive").textContent = totalActive;
+      document.getElementById("totalIdle").textContent = totalIdle;
+    }
+
+    document.getElementById("shareButton").addEventListener("click", () => {
+      const captureArea = document.getElementById("captureArea");
+
+      html2canvas(captureArea, {
+        backgroundColor: "#ffffff",
+        scale: 2
+      }).then(canvas => {
+        canvas.toBlob(blob => {
+          const file = new File([blob], 'rider_count.png', { type: 'image/png' });
+
+          // Try Web Share API with file (mobile)
+          if (navigator.canShare && navigator.canShare({ files: [file] })) {
+            navigator.share({
+              title: 'MT Rider Count',
+              text: 'Sharing MT Rider Count Screenshot',
+              files: [file],
+            }).catch(err => console.error('Share failed:', err));
+          } else {
+            // Fallback: show social share popup with image as data URL
+            const url = URL.createObjectURL(blob);
+
+            // WhatsApp, Telegram, Facebook share links (image sharing is not supported directly, so share the page or text)
+            const shareText = encodeURIComponent('Check out the MT Rider Count!');
+            const pageUrl = encodeURIComponent(window.location.href);
+
+            document.getElementById('waShare').href = `https://wa.me/?text=${shareText}%20${pageUrl}`;
+            document.getElementById('tgShare').href = `https://t.me/share/url?url=${pageUrl}&text=${shareText}`;
+            document.getElementById('fbShare').href = `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`;
+
+            document.getElementById('socialSharePopup').style.display = 'flex';
+
+            // Optionally, revoke the object URL after some time
+            setTimeout(() => URL.revokeObjectURL(url), 60000);
+          }
+        }, 'image/png');
+      });
+    });
+
+    document.getElementById("waShare").addEventListener("click", function () {
+      const captureArea = document.getElementById("captureArea");
+
+      html2canvas(captureArea, {
+        backgroundColor: "#ffffff",
+        scale: 2
+      }).then(canvas => {
+        canvas.toBlob(blob => {
+          const url = URL.createObjectURL(blob);
+          const waLink = `https://wa.me/?text=Check out this MT Rider Count screenshot! ${url}`;
+          window.open(waLink, '_blank');
+        });
+      });
+    });
+
+    document.getElementById("tgShare").addEventListener("click", function () {
+      const captureArea = document.getElementById("captureArea");
+
+      html2canvas(captureArea, {
+        backgroundColor: "#ffffff",
+        scale: 2
+      }).then(canvas => {
+        canvas.toBlob(blob => {
+          const url = URL.createObjectURL(blob);
+          const tgLink = `https://t.me/share/photo?photo=${url}`;
+          window.open(tgLink, '_blank');
+        });
+      });
+    });
+
+    document.getElementById("fbShare").addEventListener("click", function () {
+      const captureArea = document.getElementById("captureArea");
+
+      html2canvas(captureArea, {
+        backgroundColor: "#ffffff",
+        scale: 2
+      }).then(canvas => {
+        canvas.toBlob(blob => {
+          const url = URL.createObjectURL(blob);
+          const fbLink = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+          window.open(fbLink, '_blank');
+        });
+      });
+    });
+  </script>
+</body>
+</html>
