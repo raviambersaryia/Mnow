@@ -326,7 +326,7 @@ const reportData = [
 // we add the new hour percentages data here
 
 const hourPercentages = [
-   { hour: "6-7",   Sunday: 0.90,  Monday: 1.01,  Tuesday: 1.38,  Wednesday: 1.89,  Thursday: 1.38,  Friday: 0.71,  Saturday: 1.25 },
+    { hour: "6-7",   Sunday: 0.90,  Monday: 1.01,  Tuesday: 1.38,  Wednesday: 1.89,  Thursday: 1.38,  Friday: 0.71,  Saturday: 1.25 },
   { hour: "7-8",   Sunday: 2.88,  Monday: 3.76,  Tuesday: 4.55,  Wednesday: 5.64,  Thursday: 4.15,  Friday: 2.14,  Saturday: 4.24 },
   { hour: "8-9",   Sunday: 7.01,  Monday: 8.77,  Tuesday: 9.92,  Wednesday: 12.40, Thursday: 9.13,  Friday: 4.42,  Saturday: 9.02 },
   { hour: "9-10",  Sunday: 12.38, Monday: 14.77, Tuesday: 15.95, Wednesday: 20.17, Thursday: 15.47, Friday: 7.41,  Saturday: 15.17 },
@@ -343,6 +343,7 @@ const hourPercentages = [
   { hour: "8-9",   Sunday: 91.43, Monday: 89.85, Tuesday: 89.56, Wednesday: 91.93, Thursday: 90.22, Friday: 71.53, Saturday: 91.88 },
   { hour: "9-10",  Sunday: 96.22, Monday: 95.46, Tuesday: 95.60, Wednesday: 96.38, Thursday: 95.42, Friday: 89.86, Saturday: 96.52 },
   { hour: "10-11", Sunday: 100.00, Monday: 99.98, Tuesday: 100.00, Wednesday: 100.00, Thursday: 100.00, Friday: 95.42, Saturday: 100.01 }
+];
 
 
 
@@ -1580,5 +1581,3 @@ function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 }
-
-
