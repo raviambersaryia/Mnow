@@ -53,15 +53,19 @@
     letter-spacing: 0.5px;
   }
 
-  td:first-child, th:first-child {
+ td:first-child, th:first-child {
     background-color: #fce3d6;
     color: #222;
     text-align: left;
     font-size: 1.08rem;
     font-weight: bold;
-    min-width: 120px;
-    max-width: 180px;
-  }
+    min-width: 220px;
+    max-width: 350px;
+    /* Remove nowrap, overflow, ellipsis */
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+}
 
   input {
     font-size: 1.15rem;
@@ -179,6 +183,9 @@
     color: #888;
     margin-top: 10px;
   }
+  #tableBody td{
+    width: 100%;
+  }
   </style>
 </head>
 <body>
@@ -245,27 +252,29 @@
           <th>DARKSTORE NAME</th>
           <th>ACTIVE RIDERS</th>
           <th>IDLE RIDERS</th>
+           <th>PENDING ORDERS</th>
           <th>BF</th>
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td>Kalyan nagar</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Basaweshwar Nagar Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Jakkur Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Begur Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Thyagaraja Nagar Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Brookfield Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>JP nagar Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Sarjapur road Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Manikonda Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Gachibowli Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Attapur Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Nizampet Mnow</td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Kalyan nagar</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Basaweshwar Nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Jakkur Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Begur Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Thyagaraja Nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Brookfield Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>JP nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Sarjapur road Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Manikonda Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Gachibowli Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Attapur Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Nizampet Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
 
       </tbody>
       <tfoot>
         <tr>
           <td>Total</td>
+          <td id="totalPending">0</td>
           <td id="totalActive">0</td>
           <td id="totalIdle">0</td>
           <td id="avgBf" class="avgCell">0.00</td>
@@ -347,16 +356,19 @@
       const rows = document.querySelectorAll('#tableBody tr');
       let totalActive = 0;
       let totalIdle = 0;
+      let totalPending = 0;
       let bfValues = [];
 
       rows.forEach(row => {
-        const [activeInput, idleInput, bfInput] = row.querySelectorAll('input');
+        const [activeInput, idleInput, pendingInput, bfInput] = row.querySelectorAll('input');
         const active = parseInt(activeInput.value) || 0;
         const idle = parseInt(idleInput.value) || 0;
+        const pending = parseInt(pendingInput.value) || 0;
         const bf = parseFloat(bfInput.value);
 
         totalActive += active;
         totalIdle += idle;
+        totalPending += pending;
 
         bfInput.classList.remove("green", "yellow", "red");
 
@@ -380,6 +392,7 @@
 
       document.getElementById("totalActive").textContent = totalActive;
       document.getElementById("totalIdle").textContent = totalIdle;
+      document.getElementById("totalPending").textContent = totalPending;
     }
 
     document.getElementById("shareButton").addEventListener("click", () => {
