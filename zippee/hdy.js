@@ -163,8 +163,62 @@ const reportData = [
         "Nizampet Mnow": 300
     },
     total: 1678
-}
-
+},
+{
+    day: "Wednesday",
+    date: "10/01/2025",
+    stores: {
+      "Manikonda Mnow": 383,
+      "Gachibowli Mnow": 605,
+      "Attapur Mnow": 325,
+      "Nizampet Mnow": 286
+    },
+    total: 1599
+  },
+  {
+    day: "Thursday",
+    date: "10/02/2025",
+    stores: {
+      "Manikonda Mnow": 479,
+      "Gachibowli Mnow": 755,
+      "Attapur Mnow": 406,
+      "Nizampet Mnow": 357
+    },
+    total: 1997
+  },
+  {
+    day: "Friday",
+    date: "10/03/2025",
+    stores: {
+      "Manikonda Mnow": 355,
+      "Gachibowli Mnow": 559,
+      "Attapur Mnow": 301,
+      "Nizampet Mnow": 265
+    },
+    total: 1481
+  },
+  {
+    day: "Saturday",
+    date: "10/04/2025",
+    stores: {
+      "Manikonda Mnow": 330,
+      "Gachibowli Mnow": 520,
+      "Attapur Mnow": 280,
+      "Nizampet Mnow": 246
+    },
+    total: 1375
+  },
+  {
+    day: "Sunday",
+    date: "10/05/2025",
+    stores: {
+      "Manikonda Mnow": 336,
+      "Gachibowli Mnow": 530,
+      "Attapur Mnow": 284,
+      "Nizampet Mnow": 250
+    },
+    total: 1400
+  }
 ];
 
 
