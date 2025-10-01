@@ -335,7 +335,7 @@ const reportData = [
   },
   {
     day: "Thursday",
-    date: "10/02/2025", 
+    date: "10/2/2025", 
     stores: {
       "Kalyan nagar": 825,
       "Basaweshwar Nagar Mnow": 738,
@@ -350,7 +350,7 @@ const reportData = [
   },
   {
     day: "Friday",
-    date: "10/03/2025", 
+    date: "10/3/2025", 
     stores: {
       "Kalyan nagar": 611,
       "Basaweshwar Nagar Mnow": 547,
@@ -365,7 +365,7 @@ const reportData = [
   },
   {
     day: "Saturday",
-    date: "10/04/2025", 
+    date: "10/4/2025", 
     stores: {
       "Kalyan nagar": 568,
       "Basaweshwar Nagar Mnow": 508,
@@ -380,7 +380,7 @@ const reportData = [
   },
   {
     day: "Sunday",
-    date: "10/05/2025", 
+    date: "10/5/2025", 
     stores: {
       "Kalyan nagar": 576,
       "Basaweshwar Nagar Mnow": 516,
@@ -1656,4 +1656,5 @@ function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 }
+
 
