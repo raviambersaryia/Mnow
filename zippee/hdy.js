@@ -177,7 +177,7 @@ const reportData = [
   },
   {
     day: "Thursday",
-    date: "10/02/2025",
+    date: "10/2/2025",
     stores: {
       "Manikonda Mnow": 479,
       "Gachibowli Mnow": 755,
@@ -188,7 +188,7 @@ const reportData = [
   },
   {
     day: "Friday",
-    date: "10/03/2025",
+    date: "10/3/2025",
     stores: {
       "Manikonda Mnow": 355,
       "Gachibowli Mnow": 559,
@@ -199,7 +199,7 @@ const reportData = [
   },
   {
     day: "Saturday",
-    date: "10/04/2025",
+    date: "10/4/2025",
     stores: {
       "Manikonda Mnow": 330,
       "Gachibowli Mnow": 520,
@@ -210,7 +210,7 @@ const reportData = [
   },
   {
     day: "Sunday",
-    date: "10/05/2025",
+    date: "10/5/2025",
     stores: {
       "Manikonda Mnow": 336,
       "Gachibowli Mnow": 530,
@@ -1445,3 +1445,4 @@ function formatDate(dt) {
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 
 }
+
