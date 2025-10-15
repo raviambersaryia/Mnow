@@ -156,66 +156,84 @@ const reportData = [
     "JP nagar Mnow": 536,
     "Sarjapur road Mnow": 645
   }, total: 4667 },
-  { day: "Thursday", date: "10/16/2025", stores: {
-    "Kalyan nagar": 656,
-    "Basaweshwar Nagar Mnow": 587,
-    "Jakkur Mnow": 522,
-    "Begur Mnow": 993,
-    "Thyagaraja Nagar Mnow": 491,
-    "Brookfield Mnow": 1312,
-    "JP nagar Mnow": 701,
-    "Sarjapur road Mnow": 844
-  }, total: 6106 },
-  { day: "Friday", date: "10/17/2025", stores: {
-    "Kalyan nagar": 812,
-    "Basaweshwar Nagar Mnow": 727,
-    "Jakkur Mnow": 646,
-    "Begur Mnow": 1229,
-    "Thyagaraja Nagar Mnow": 608,
-    "Brookfield Mnow": 1624,
-    "JP nagar Mnow": 868,
-    "Sarjapur road Mnow": 1045
-  }, total: 7559 },
-  { day: "Saturday", date: "10/18/2025", stores: {
-    "Kalyan nagar": 786,
-    "Basaweshwar Nagar Mnow": 685,
-    "Jakkur Mnow": 609,
-    "Begur Mnow": 1159,
-    "Thyagaraja Nagar Mnow": 573,
-    "Brookfield Mnow": 1532,
-    "JP nagar Mnow": 819,
-    "Sarjapur road Mnow": 985
-  }, total: 7128 },
-  { day: "Sunday", date: "10/19/2025", stores: {
-    "Kalyan nagar": 745,
-    "Basaweshwar Nagar Mnow": 667,
-    "Jakkur Mnow": 593,
-    "Begur Mnow": 1128,
-    "Thyagaraja Nagar Mnow": 558,
-    "Brookfield Mnow": 1490,
-    "JP nagar Mnow": 797,
-    "Sarjapur road Mnow": 959
-  }, total: 6937 },
-  { day: "Monday", date: "10/20/2025", stores: {
-    "Kalyan nagar": 360,
-    "Basaweshwar Nagar Mnow": 322,
-    "Jakkur Mnow": 286,
-    "Begur Mnow": 544,
-    "Thyagaraja Nagar Mnow": 269,
-    "Brookfield Mnow": 719,
-    "JP nagar Mnow": 385,
-    "Sarjapur road Mnow": 463
-  }, total: 3348 },
-  { day: "Tuesday", date: "10/21/2025", stores: {
-    "Kalyan nagar": 465,
-    "Basaweshwar Nagar Mnow": 416,
-    "Jakkur Mnow": 370,
-    "Begur Mnow": 705,
-    "Thyagaraja Nagar Mnow": 348,
-    "Brookfield Mnow": 931,
-    "JP nagar Mnow": 498,
-    "Sarjapur road Mnow": 599
-  }, total: 4332 },
+ // 10/16/2025
+{
+  day: "Thursday", date: "10/16/2025", stores: {
+    "Kalyan nagar": 587,
+    "Basaweshwar Nagar Mnow": 525,
+    "Jakkur Mnow": 466,
+    "Begur Mnow": 888,
+    "Thyagaraja Nagar Mnow": 439,
+    "Brookfield Mnow": 1173,
+    "JP nagar Mnow": 628,
+    "Sarjapur road Mnow": 755
+  }, total: 5461
+},
+// 10/17/2025
+{
+  day: "Friday", date: "10/17/2025", stores: {
+    "Kalyan nagar": 734,
+    "Basaweshwar Nagar Mnow": 657,
+    "Jakkur Mnow": 584,
+    "Begur Mnow": 1112,
+    "Thyagaraja Nagar Mnow": 550,
+    "Brookfield Mnow": 1469,
+    "JP nagar Mnow": 786,
+    "Sarjapur road Mnow": 945
+  }, total: 6837
+},
+// 10/18/2025
+{
+  day: "Saturday", date: "10/18/2025", stores: {
+    "Kalyan nagar": 686,
+    "Basaweshwar Nagar Mnow": 614,
+    "Jakkur Mnow": 546,
+    "Begur Mnow": 1039,
+    "Thyagaraja Nagar Mnow": 514,
+    "Brookfield Mnow": 1373,
+    "JP nagar Mnow": 733,
+    "Sarjapur road Mnow": 883
+  }, total: 6388
+},
+// 10/19/2025
+{
+  day: "Sunday", date: "10/19/2025", stores: {
+    "Kalyan nagar": 677,
+    "Basaweshwar Nagar Mnow": 606,
+    "Jakkur Mnow": 540,
+    "Begur Mnow": 1026,
+    "Thyagaraja Nagar Mnow": 507,
+    "Brookfield Mnow": 1356,
+    "JP nagar Mnow": 725,
+    "Sarjapur road Mnow": 872
+  }, total: 6309
+},
+// 10/20/2025
+{
+  day: "Monday", date: "10/20/2025", stores: {
+    "Kalyan nagar": 423,
+    "Basaweshwar Nagar Mnow": 378,
+    "Jakkur Mnow": 336,
+    "Begur Mnow": 640,
+    "Thyagaraja Nagar Mnow": 316,
+    "Brookfield Mnow": 846,
+    "JP nagar Mnow": 452,
+    "Sarjapur road Mnow": 544
+  }, total: 3935
+},
+// 10/21/2025
+{
+  day: "Tuesday", date: "10/21/2025", stores: {
+    "Kalyan nagar": 486,
+    "Basaweshwar Nagar Mnow": 435,
+    "Jakkur Mnow": 387,
+    "Begur Mnow": 736,
+    "Thyagaraja Nagar Mnow": 364,
+    "Brookfield Mnow": 973,
+    "JP nagar Mnow": 521,
+    "Sarjapur road Mnow": 626
+  }, total: 4528
+},
   { day: "Wednesday", date: "10/22/2025", stores: {
     "Kalyan nagar": 371,
     "Basaweshwar Nagar Mnow": 332,

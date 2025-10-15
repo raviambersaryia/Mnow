@@ -67,47 +67,47 @@ const reportData = [
     "Nizampet Mnow": 174
   }, total: 974 },
   { day: "Wednesday", date: "10/15/2025", stores: {
-    "Manikonda Mnow": 261,
+    "Manikonda Mnow": 317,
     "Gachibowli Mnow": 412,
     "Attapur Mnow": 222,
     "Nizampet Mnow": 195
   }, total: 1090 },
-  { day: "Thursday", date: "10/16/2025", stores: {
-    "Manikonda Mnow": 342,
-    "Gachibowli Mnow": 539,
-    "Attapur Mnow": 290,
-    "Nizampet Mnow": 255
-  }, total: 1426 },
-  { day: "Friday", date: "10/17/2025", stores: {
-    "Manikonda Mnow": 423,
-    "Gachibowli Mnow": 668,
-    "Attapur Mnow": 359,
-    "Nizampet Mnow": 316
-  }, total: 1766 },
-  { day: "Saturday", date: "10/18/2025", stores: {
-    "Manikonda Mnow": 399,
-    "Gachibowli Mnow": 629,
-    "Attapur Mnow": 338,
-    "Nizampet Mnow": 298
-  }, total: 1664 },
-  { day: "Sunday", date: "10/19/2025", stores: {
-    "Manikonda Mnow": 389,
-    "Gachibowli Mnow": 613,
-    "Attapur Mnow": 329,
-    "Nizampet Mnow": 290
-  }, total: 1621 },
-  { day: "Monday", date: "10/20/2025", stores: {
-    "Manikonda Mnow": 188,
-    "Gachibowli Mnow": 296,
-    "Attapur Mnow": 159,
-    "Nizampet Mnow": 140
-  }, total: 783 },
-  { day: "Tuesday", date: "10/21/2025", stores: {
-    "Manikonda Mnow": 243,
-    "Gachibowli Mnow": 383,
-    "Attapur Mnow": 206,
-    "Nizampet Mnow": 181
-  }, total: 1013 },
+ { day: "Thursday", date: "10/16/2025", stores: {
+    "Manikonda Mnow": 317,
+    "Gachibowli Mnow": 500,
+    "Attapur Mnow": 269,
+    "Nizampet Mnow": 237
+  }, total: 1323 },
+{ day: "Friday", date: "10/17/2025", stores: {
+    "Manikonda Mnow": 396,
+    "Gachibowli Mnow": 625,
+    "Attapur Mnow": 336,
+    "Nizampet Mnow": 295
+  }, total: 1652 },
+{ day: "Saturday", date: "10/18/2025", stores: {
+    "Manikonda Mnow": 371,
+    "Gachibowli Mnow": 584,
+    "Attapur Mnow": 314,
+    "Nizampet Mnow": 276
+  }, total: 1545 },
+{ day: "Sunday", date: "10/19/2025", stores: {
+    "Manikonda Mnow": 366,
+    "Gachibowli Mnow": 577,
+    "Attapur Mnow": 311,
+    "Nizampet Mnow": 273
+  }, total: 1527 },
+{ day: "Monday", date: "10/20/2025", stores: {
+    "Manikonda Mnow": 215,
+    "Gachibowli Mnow": 338,
+    "Attapur Mnow": 181,
+    "Nizampet Mnow": 160
+  }, total: 894 },
+{ day: "Tuesday", date: "10/21/2025", stores: {
+    "Manikonda Mnow": 247,
+    "Gachibowli Mnow": 390,
+    "Attapur Mnow": 209,
+    "Nizampet Mnow": 184
+  }, total: 1030 },
   { day: "Wednesday", date: "10/22/2025", stores: {
     "Manikonda Mnow": 194,
     "Gachibowli Mnow": 305,
@@ -210,7 +210,7 @@ function getCurrentHourPercentage() {
 
   // Map JS hour to your table row (6-7 AM is 6, 7-8 AM is 7, ..., 9-10 PM is 21)
   // Find the closest hour row that is <= current hour
-  let rowIdx = hour - 6;
+  let rowIdx = hour - 6; 
   if (rowIdx < 0) rowIdx = 0;
   if (rowIdx >= hourPercentages.length) rowIdx = hourPercentages.length - 1;
 
