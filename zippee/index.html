@@ -205,27 +205,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script>
+  // Set your project start date (change if needed)
+  const projectionStart = new Date('2025-07-13T00:00:00');
 
-      // new seaction are inlcude for tlakie tlakie project  today date 14 oct 2025
-      // ⚙️ Auto-update projection date & time
-function updateProjectionDate() {
-  const el = document.getElementById("projection-date");
-  const now = new Date();
-  const formatted = now.toLocaleString("en-IN", {
-    weekday: "long",
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  });
-  el.textContent = `📅 Projection Date & Time: ${formatted}`;
-}
-setInterval(updateProjectionDate, 1000);
-updateProjectionDate();
+  function formatDuration(ms) {
+    const totalSec = Math.floor(ms / 1000);
+    const days = Math.floor(totalSec / 86400);
+    const hours = Math.floor((totalSec % 86400) / 3600);
+    const minutes = Math.floor((totalSec % 3600) / 60);
+    const seconds = totalSec % 60;
+    return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
 
-    // TalkieTalkie: Share Table button logic (unique variable/class names)
+  function updateProjectionDate() {
+    const el = document.getElementById("projection-date");
+    const now = new Date();
+
+    const formattedNow = now.toLocaleString("en-IN", {
+      weekday: "long",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+    });
+
+    const startLabel = projectionStart.toLocaleString("en-IN", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+
+    const diff = now - projectionStart;
+    const running = diff >= 0 ? formatDuration(diff) : `starts in ${formatDuration(-diff)}`;
+
+    el.innerHTML = `📅 Current Projection Date & Time: ${formattedNow} <br> ▶️ Project start: ${startLabel} — ${running} (live)`;
+  }
+
+  setInterval(updateProjectionDate, 1000);
+  updateProjectionDate();
+
+      // TalkieTalkie: Share Table button logic (unique variable/class names)
     function talkieShareTableScreenshot() {
       const table = document.querySelector('#output table');
       if (!table) return;
