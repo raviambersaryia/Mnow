@@ -525,3 +525,145 @@ footer {
     width: 30%;
     margin: auto;
 }
+/* ⚡ Talkie Talkie Section Styles */
+.talkie-projection {
+  position: relative;
+  background: linear-gradient(120deg, #000000 0%, #001a00 100%);
+  color: #00ff99;
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+.talkie-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0,255,153,0.15), rgba(0,0,0,0.9));
+  animation: move-bg 10s linear infinite alternate;
+  z-index: 1;
+}
+
+@keyframes move-bg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+.talkie-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  border: 2px solid #00ff99;
+  box-shadow: 0 0 40px rgba(0, 255, 100, 0.3);
+  padding: 60px 30px;
+}
+
+.talkie-title {
+  font-size: 54px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-shadow: 0 0 25px #00ff99;
+  animation: glow-text 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow-text {
+  from {
+    text-shadow: 0 0 10px #00ff99, 0 0 20px #00ff99;
+  }
+  to {
+    text-shadow: 0 0 30px #00ff99, 0 0 60px #00ffcc;
+  }
+}
+
+.projection-date {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #b6ffcc;
+  text-shadow: 0 0 10px #00ff99;
+}
+
+.talkie-description {
+  margin-top: 25px;
+  font-size: 20px;
+  line-height: 1.8;
+  color: #a8ffb0;
+}
+
+.talkie-description .brand {
+  color: #00ffcc;
+  font-weight: 600;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.ticker {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  border-top: 1px solid rgba(0,255,150,0.4);
+  border-bottom: 1px solid rgba(0,255,150,0.4);
+  padding: 15px 0;
+}
+
+.ticker-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker-scroll 20s linear infinite;
+  font-size: 20px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+@keyframes ticker-scroll {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.action-btn {
+  margin-top: 40px;
+  background: #00ff99;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px #00ff99;
+}
+
+.action-btn:hover {
+  background: #00cc77;
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #00ff99;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .talkie-title {
+    font-size: 36px;
+  }
+  .talkie-description {
+    font-size: 18px;
+  }
+  .ticker-text {
+    font-size: 16px;
+  }
+  .action-btn {
+    font-size: 18px;
+    padding: 12px 30px;
+  }
+}

@@ -83,13 +83,32 @@
         <h1>📊 Store Projected Orders Report - June Projection</h1>
         <div class="datetime" id="datetime"></div>
     </header>
-
+       <!-- ⚡ Talkie Talkie Projection Section -->
+<section class="talkie-projection">
+  <div class="talkie-overlay"></div>
+  <div class="talkie-content">
+    <h1 class="talkie-title">🚀 Talkie Talkie Project</h1>
+    <p id="projection-date" class="projection-date"></p>
+    <p class="talkie-description">
+      <strong>Talkie Talkie</strong> is a smart analytics project combining <span class="brand">Zippee</span> and <span class="brand">Myntra</span> reports — 
+      built for hourly monitoring, automatic updates, and easy projection management.
+    </p>
+    <div class="ticker">
+      <div class="ticker-text">
+        ⚙️ Automated Reports &nbsp; | &nbsp; 💹 Real-Time Analytics &nbsp; | &nbsp; 🕒 Hourly Updates &nbsp; | &nbsp; 🔍 Easy to Access &nbsp; | &nbsp; 💾 Zippee + Myntra Integration
+      </div>
+    </div>
+    <button class="action-btn">View Live Projection</button>
+  </div>
+</section>
     <section class="search-section" style="margin: 20px;">
       <label for="searchDate">Search before date:</label>
       <input type="date" id="searchDate">
       <input type="time" id="searchTime">
       <button id="searchBtn">Search</button>
     </section>
+    
+
 
     <section class="table-section">
         <table id="reportTable">
@@ -109,7 +128,7 @@
   <input type="file" id="fileInput" accept=".xlsx,.xls,.csv" />
   <button id="submitBtn">Submit</button>
   <button id="finalTableBtn" style="display:none;">Final Table</button>
-  <button id="showMoreBtn" style="display:none;">Show More Columns</button>
+  
   <div id="output"></div>
   
   <!-- Add after your current table section -->
@@ -186,6 +205,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <script>
+
+      // new seaction are inlcude for tlakie tlakie project  today date 14 oct 2025
+      // ⚙️ Auto-update projection date & time
+function updateProjectionDate() {
+  const el = document.getElementById("projection-date");
+  const now = new Date();
+  const formatted = now.toLocaleString("en-IN", {
+    weekday: "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  el.textContent = `📅 Projection Date & Time: ${formatted}`;
+}
+setInterval(updateProjectionDate, 1000);
+updateProjectionDate();
+
     // TalkieTalkie: Share Table button logic (unique variable/class names)
     function talkieShareTableScreenshot() {
       const table = document.querySelector('#output table');
@@ -265,11 +304,4 @@
     <script src="try6.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
 
