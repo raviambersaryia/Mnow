@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Diwali ✨🪔</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background: radial-gradient(circle at 10% 10%, #1b1b35 0%, #0b0b12 60%);color:#fff;display:flex;align-items:center;justify-content:center;padding:24px;}
+    .card{width:100%;max-width:980px;border-radius:18px;padding:28px;background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));box-shadow: 0 10px 40px rgba(0,0,0,0.6);position:relative;overflow:hidden;}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{width:84px;height:84px;border-radius:14px;display:flex;align-items:center;justify-content:center;background: linear-gradient(135deg,#ffb347,#ffcc33);color:#4a2d00;font-weight:800;font-size:28px;filter:drop-shadow(0 6px 16px rgba(255,180,60,0.14));}
+    h1{font-size:34px;line-height:1.05}
+    p.lead{margin-top:6px;opacity:0.9}
+    .controls{display:flex;gap:12px;margin-left:auto;align-items:center}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.08);padding:10px 14px;border-radius:10px;color:inherit;cursor:pointer;font-weight:600}
+    .btn.primary{background:linear-gradient(90deg,#ff8a00,#ff3b8d);border:0;color:#2b0300}
+    main{display:grid;grid-template-columns:1fr 360px;gap:22px;margin-top:18px;align-items:start}
+    .message{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));min-height:220px}
+    .message .wish{font-size:18px;margin-bottom:12px}
+    .message .diya-row{display:flex;gap:12px;flex-wrap:wrap}
+    .diya{width:64px;height:100px;border-radius:18px;background:linear-gradient(180deg,#2b0000,#5b1a00);position:relative;display:flex;align-items:flex-start;justify-content:center;padding-top:6px;cursor:pointer;transition:transform .18s ease;user-select:none}
+    .diya:active{transform:translateY(2px)}
+    .flame{width:18px;height:24px;border-radius:50% 50% 50% 50%/60% 60% 40% 40%;background:radial-gradient(circle at 40% 30%, #fff8b8 0%, #ffd36b 30%, #ff7b00 60%);box-shadow:0 0 18px rgba(255,140,30,0.9);position:absolute;top:-12px;opacity:0;transform:translateY(6px);transition:opacity .22s ease,transform .22s ease}
+    .diya.on .flame{opacity:1;transform:translateY(0)}
+    canvas#fw{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+    .panel{padding:18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));min-height:220px}
+    .panel h3{margin-bottom:8px}
+    .toggle{display:flex;gap:8px;align-items:center}
+    .share{margin-top:12px;display:flex;gap:8px}
+    footer{margin-top:18px;display:flex;justify-content:space-between;align-items:center}
+    .small{opacity:0.85;font-size:13px}
+    @media (max-width:860px){main{grid-template-columns:1fr;}.controls{margin-top:12px}}
+  </style>
+</head>
+<body>
+  <div class="card" role="region" aria-label="Happy Diwali greeting card">
+    <canvas id="fw"></canvas>
+    <header>
+      <div class="logo">🪔</div>
+      <div>
+        <h1>Happy Diwali! ✨</h1>
+        <p class="lead">Wishing you and your family brightness, joy and new beginnings.</p>
+      </div>
+      <div class="controls">
+        <button class="btn" id="toggle-music">Play Music</button>
+        <button class="btn primary" id="light-all">Light All Diyas</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="message" id="message">
+        <div class="wish">🎶 Hello! Wishing you and your family a very <strong>Happy Diwali</strong>! 🎶</div>
+        <div>
+          <p>May this festival of lights fill your home with brightness, happiness, and endless joy. Let every diya you light bring peace and prosperity into your life.</p>
+          <p style="margin-top:10px">Here’s to new beginnings, success, and togetherness in the year ahead.</p>
+        </div>
+        <div style="margin-top:14px">
+          <div class="diya-row" id="diyaRow"></div>
+        </div>
+      </section>
+
+      <aside class="panel">
+        <h3>Controls & Sharing</h3>
+        <div class="toggle">
+          <label for="auto-fw">Auto Fireworks</label>
+          <input type="checkbox" id="auto-fw" checked />
+        </div>
+        <div style="margin-top:10px">
+          <label for="nameInput" class="small">Personalize name (appears in message)</label>
+          <input id="nameInput" placeholder="e.g. Ravi" style="width:100%;margin-top:6px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit" />
+        </div>
+        <div class="share">
+          <button class="btn" id="copyText">Copy Message</button>
+          <button class="btn" id="downloadPNG">Download Card</button>
+        </div>
+        <div style="margin-top:12px;font-size:13px;opacity:0.9">Tip: Click a diya to light or extinguish. Use <strong>Light All Diyas</strong> for a quick effect.</div>
+      </aside>
+    </main>
+
+    <!-- New Section: happy_diwali -->
+    <section id="happy_diwali" style="margin-top:30px;padding:20px;background:rgba(255,255,255,0.05);border-radius:12px;text-align:center;">
+      <h2 style="font-size:26px;margin-bottom:12px;color:#ffcc33;">🌟 Happy_Diwali Section 🌟</h2>
+      <p style="font-size:18px;">Welcome to the new <strong>Happy_Diwali</strong> section! Here, you can add more greetings, share your wishes, or display special Diwali offers, photos, or event details. Make your celebration more vibrant with extra content!</p>
+    </section>
+
+    <footer>
+      <div class="small">Stay blessed and keep shining bright! 🪔</div>
+      <div class="small">Made with ❤️</div>
+    </footer>
+  </div>
+
+  <script>
+    const diyaRow = document.getElementById('diyaRow');
+    for(let i=0;i<8;i++){
+      const d = document.createElement('div');
+      d.className='diya';
+      const flame = document.createElement('div');
+      flame.className='flame';
+      d.appendChild(flame);
+      d.addEventListener('click',()=> d.classList.toggle('on'));
+      diyaRow.appendChild(d);
+    }
+
+    document.getElementById('light-all').addEventListener('click',()=>{
+      document.querySelectorAll('.diya').forEach(el=>el.classList.add('on'));
+      launchBurst();
+    });
+
+    const nameInput = document.getElementById('nameInput');
+    nameInput.addEventListener('input',()=>{
+      const v = nameInput.value.trim();
+      const wishEl = document.querySelector('.wish');
+      wishEl.innerHTML = `🎶 Hello${v? ' '+v : ''}! Wishing you and your family a very <strong>Happy Diwali</strong>! 🎶`;
+    });
+
+    document.getElementById('copyText').addEventListener('click',async ()=>{
+      const txt = document.querySelector('.wish').innerText + '\n' + document.querySelector('#message p').innerText;
+      try{ await navigator.clipboard.writeText(txt); alert('Message copied to clipboard!'); }
+      catch(e){ alert('Unable to copy.'); }
+    });
+
+    let audio;
+    document.getElementById('toggle-music').addEventListener('click',async function(){
+      if(!audio){
+        audio = new Audio();
+        audio.src = '';
+        audio.loop = true;
+      }
+      if(audio.src && audio.paused){ audio.play(); this.textContent='Pause Music'; }
+      else if(audio && !audio.paused){ audio.pause(); this.textContent='Play Music'; }
+      else { alert('No music file provided. To add music, set audio.src in the script to a valid URL.'); }
+    });
+
+    const canvas = document.getElementById('fw');
+    const ctx = canvas.getContext('2d');
+    function fitCanvas(){ canvas.width = canvas.clientWidth * devicePixelRatio; canvas.height = canvas.clientHeight * devicePixelRatio; ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0); }
+    fitCanvas(); window.addEventListener('resize', fitCanvas);
+
+    const particles = [];
+    function rand(min,max){return Math.random()*(max-min)+min}
+
+    function spawnFirework(x,y){
+      const count = Math.floor(rand(18,36));
+      const hue = Math.floor(rand(0,360));
+      for(let i=0;i<count;i++){
+        const a = rand(0,Math.PI*2);
+        const s = rand(1,5);
+        particles.push({x,y,ax:Math.cos(a)*s,ay:Math.sin(a)*s,life:rand(40,90),hue,decay:0.96});
+      }
+    }
+
+    function launchBurst(){
+      const x = rand(80, canvas.clientWidth-80);
+      const y = rand(40, canvas.clientHeight/2);
+      spawnFirework(x,y);
+    }
+
+    function frame(){
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      particles.forEach((p,i)=>{
+        p.x += p.ax; p.y += p.ay; p.ax *= p.decay; p.ay *= p.decay; p.life--;
+        const alpha = Math.max(0, p.life/90);
+        ctx.beginPath(); ctx.globalCompositeOperation='lighter';
+        ctx.fillStyle = `hsla(${p.hue},100%,60%,${alpha})`;
+        ctx.arc(p.x, p.y, Math.max(1, alpha*3), 0, Math.PI*2);
+        ctx.fill();
+        if(p.life<=0) particles.splice(i,1);
+      });
+      ctx.globalCompositeOperation='source-over';
+      requestAnimationFrame(frame);
+    }
+    frame();
+
+    let fwInterval = null;
+    const fwCheckbox = document.getElementById('auto-fw');
+    function startFW(){ if(fwInterval) clearInterval(fwInterval); fwInterval = setInterval(()=>{ launchBurst(); }, 1400); }
+    function stopFW(){ if(fwInterval) clearInterval(fwInterval); fwInterval=null; }
+    fwCheckbox.addEventListener('change', ()=> fwCheckbox.checked? startFW() : stopFW());
+    if(fwCheckbox.checked) startFW();
+
+    canvas.addEventListener('click',(e)=>{
+      const r = canvas.getBoundingClientRect();
+      const x = (e.clientX - r.left);
+      const y = (e.clientY - r.top);
+      spawnFirework(x,y);
+    });
+
+    document.getElementById('downloadPNG').addEventListener('click', async ()=>{
+      alert('To download a high-quality PNG, open DevTools → Elements, right-click the .card element and choose "Capture node screenshot".');
+    });
+  </script>
+</body>
+</html>
