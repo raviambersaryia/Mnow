@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  perspective: 1000px;
+}
+
+/* Dynamic Background */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(45deg, #020024, #090979, #00d4ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50% }
+  50% { background-position: 100% 50% }
+  100% { background-position: 0% 50% }
+}
+
+/* Background slideshow styles */
+.bg-slideshow {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* behind gradient and stars */
+  overflow: hidden;
+}
+
+.bg-slideshow .bg-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.6s ease-in-out;
+  transform-origin: center center;
+  will-change: opacity, transform;
+  filter: saturate(1.05) contrast(1.02) brightness(0.9);
+}
+
+.bg-slideshow .bg-slide.visible {
+  opacity: 1;
+}
+
+/* slow zoom-in effect on visible background */
+@keyframes bgZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.06); }
+}
+.bg-slideshow .bg-slide.visible {
+  animation: bgZoom 20s linear both;
+}
+
+/* keep existing photo gallery styling but push photos in front */
+.photo-gallery { z-index: 3; pointer-events: none; }
+
+#stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.content {
+  z-index: 2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+h1 span {
+  color: #00d4ff;
+  text-shadow: 0 0 10px #00d4ff;
+}
+
+.message {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.time {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.whatsapp-btn {
+  background-color: #25d366;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 0 15px #25d366;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Floating photos */
+.photo-gallery img {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  animation: float 15s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-50px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) rotate(720deg);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Confetti Animation */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  opacity: 0.7;
+  animation: confettiFall 3s linear forwards;
+  z-index: 1;
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
