@@ -9,7 +9,7 @@ const reportData = [
  { day: "Wednesday", date: "10/1/2025", stores: {
     "Kalyan nagar": 720,
     "Basaweshwar Nagar Mnow": 644,
-    "Jakkur Mnow": 573,
+    "Jakkur_mnow": 573,
     "Begur Mnow": 1090,
     "Thyagaraja Nagar Mnow": 539,
     "Brookfield Mnow": 1440,
@@ -19,7 +19,7 @@ const reportData = [
   { day: "Thursday", date: "10/2/2025", stores: {
     "Kalyan nagar": 825,
     "Basaweshwar Nagar Mnow": 738,
-    "Jakkur Mnow": 657,
+    "Jakkur_mnow": 657,
     "Begur Mnow": 1249,
     "Thyagaraja Nagar Mnow": 617,
     "Brookfield Mnow": 1650,
@@ -29,7 +29,7 @@ const reportData = [
   { day: "Friday", date: "10/3/2025", stores: {
     "Kalyan nagar": 611,
     "Basaweshwar Nagar Mnow": 547,
-    "Jakkur Mnow": 486,
+    "Jakkur_mnow": 486,
     "Begur Mnow": 925,
     "Thyagaraja Nagar Mnow": 457,
     "Brookfield Mnow": 1222,
@@ -39,7 +39,7 @@ const reportData = [
   { day: "Saturday", date: "10/4/2025", stores: {
     "Kalyan nagar": 568,
     "Basaweshwar Nagar Mnow": 508,
-    "Jakkur Mnow": 452,
+    "Jakkur_mnow": 452,
     "Begur Mnow": 860,
     "Thyagaraja Nagar Mnow": 424,
     "Brookfield Mnow": 1135,
@@ -49,7 +49,7 @@ const reportData = [
   { day: "Sunday", date: "10/5/2025", stores: {
     "Kalyan nagar": 576,
     "Basaweshwar Nagar Mnow": 516,
-    "Jakkur Mnow": 459,
+    "Jakkur_mnow": 459,
     "Begur Mnow": 872,
     "Thyagaraja Nagar Mnow": 431,
     "Brookfield Mnow": 1152,
@@ -59,7 +59,7 @@ const reportData = [
   { day: "Monday", date: "10/6/2025", stores: {
     "Kalyan nagar": 301,
     "Basaweshwar Nagar Mnow": 269,
-    "Jakkur Mnow": 240,
+    "Jakkur_mnow": 240,
     "Begur Mnow": 456,
     "Thyagaraja Nagar Mnow": 225,
     "Brookfield Mnow": 602,
@@ -69,7 +69,7 @@ const reportData = [
   { day: "Tuesday", date: "10/7/2025", stores: {
     "Kalyan nagar": 424,
     "Basaweshwar Nagar Mnow": 380,
-    "Jakkur Mnow": 338,
+    "Jakkur_mnow": 338,
     "Begur Mnow": 642,
     "Thyagaraja Nagar Mnow": 318,
     "Brookfield Mnow": 849,
@@ -79,7 +79,7 @@ const reportData = [
   { day: "Wednesday", date: "10/8/2025", stores: {
     "Kalyan nagar": 457,
     "Basaweshwar Nagar Mnow": 409,
-    "Jakkur Mnow": 363,
+    "Jakkur_mnow": 363,
     "Begur Mnow": 691,
     "Thyagaraja Nagar Mnow": 342,
     "Brookfield Mnow": 913,
@@ -89,7 +89,7 @@ const reportData = [
   { day: "Thursday", date: "10/9/2025", stores: {
     "Kalyan nagar": 527,
     "Basaweshwar Nagar Mnow": 472,
-    "Jakkur Mnow": 419,
+    "Jakkur_mnow": 419,
     "Begur Mnow": 798,
     "Thyagaraja Nagar Mnow": 394,
     "Brookfield Mnow": 1054,
@@ -99,7 +99,7 @@ const reportData = [
   { day: "Friday", date: "10/10/2025", stores: {
     "Kalyan nagar": 610,
     "Basaweshwar Nagar Mnow": 546,
-    "Jakkur Mnow": 486,
+    "Jakkur_mnow": 486,
     "Begur Mnow": 924,
     "Thyagaraja Nagar Mnow": 457,
     "Brookfield Mnow": 1221,
@@ -109,7 +109,7 @@ const reportData = [
   { day: "Saturday", date: "10/11/2025", stores: {
     "Kalyan nagar": 619,
     "Basaweshwar Nagar Mnow": 554,
-    "Jakkur Mnow": 492,
+    "Jakkur_mnow": 492,
     "Begur Mnow": 937,
     "Thyagaraja Nagar Mnow": 463,
     "Brookfield Mnow": 1238,
@@ -119,7 +119,7 @@ const reportData = [
   { day: "Sunday", date: "10/12/2025", stores: {
     "Kalyan nagar": 639,
     "Basaweshwar Nagar Mnow": 572,
-    "Jakkur Mnow": 509,
+    "Jakkur_mnow": 509,
     "Begur Mnow": 968,
     "Thyagaraja Nagar Mnow": 478,
     "Brookfield Mnow": 1279,
@@ -129,7 +129,7 @@ const reportData = [
   { day: "Monday", date: "10/13/2025", stores: {
     "Kalyan nagar": 360,
     "Basaweshwar Nagar Mnow": 322,
-    "Jakkur Mnow": 286,
+    "Jakkur_mnow": 286,
     "Begur Mnow": 544,
     "Thyagaraja Nagar Mnow": 269,
     "Brookfield Mnow": 719,
@@ -139,7 +139,7 @@ const reportData = [
   { day: "Tuesday", date: "10/14/2025", stores: {
     "Kalyan nagar": 448,
     "Basaweshwar Nagar Mnow": 401,
-    "Jakkur Mnow": 357,
+    "Jakkur_mnow": 357,
     "Begur Mnow": 678,
     "Thyagaraja Nagar Mnow": 335,
     "Brookfield Mnow": 896,
@@ -149,7 +149,7 @@ const reportData = [
   { day: "Wednesday", date: "10/15/2025", stores: {
     "Kalyan nagar": 501,
     "Basaweshwar Nagar Mnow": 449,
-    "Jakkur Mnow": 399,
+    "Jakkur_mnow": 399,
     "Begur Mnow": 759,
     "Thyagaraja Nagar Mnow": 375,
     "Brookfield Mnow": 1003,
@@ -161,7 +161,7 @@ const reportData = [
   day: "Thursday", date: "10/16/2025", stores: {
     "Kalyan nagar": 587,
     "Basaweshwar Nagar Mnow": 525,
-    "Jakkur Mnow": 466,
+    "Jakkur_mnow": 466,
     "Begur Mnow": 888,
     "Thyagaraja Nagar Mnow": 439,
     "Brookfield Mnow": 1173,
@@ -174,7 +174,7 @@ const reportData = [
   day: "Friday", date: "10/17/2025", stores: {
     "Kalyan nagar": 734,
     "Basaweshwar Nagar Mnow": 657,
-    "Jakkur Mnow": 584,
+    "Jakkur_mnow": 584,
     "Begur Mnow": 1112,
     "Thyagaraja Nagar Mnow": 550,
     "Brookfield Mnow": 1469,
@@ -187,7 +187,7 @@ const reportData = [
   day: "Saturday", date: "10/18/2025", stores: {
     "Kalyan nagar": 686,
     "Basaweshwar Nagar Mnow": 614,
-    "Jakkur Mnow": 546,
+    "Jakkur_mnow": 546,
     "Begur Mnow": 1039,
     "Thyagaraja Nagar Mnow": 514,
     "Brookfield Mnow": 1373,
@@ -200,7 +200,7 @@ const reportData = [
   day: "Sunday", date: "10/19/2025", stores: {
     "Kalyan nagar": 677,
     "Basaweshwar Nagar Mnow": 606,
-    "Jakkur Mnow": 540,
+    "Jakkur_mnow": 540,
     "Begur Mnow": 1026,
     "Thyagaraja Nagar Mnow": 507,
     "Brookfield Mnow": 1356,
@@ -213,7 +213,7 @@ const reportData = [
   day: "Monday", date: "10/20/2025", stores: {
     "Kalyan nagar": 423,
     "Basaweshwar Nagar Mnow": 378,
-    "Jakkur Mnow": 336,
+    "Jakkur_mnow": 336,
     "Begur Mnow": 640,
     "Thyagaraja Nagar Mnow": 316,
     "Brookfield Mnow": 846,
@@ -226,7 +226,7 @@ const reportData = [
   day: "Tuesday", date: "10/21/2025", stores: {
     "Kalyan nagar": 486,
     "Basaweshwar Nagar Mnow": 435,
-    "Jakkur Mnow": 387,
+    "Jakkur_mnow": 387,
     "Begur Mnow": 736,
     "Thyagaraja Nagar Mnow": 364,
     "Brookfield Mnow": 973,
@@ -237,7 +237,7 @@ const reportData = [
   { day: "Wednesday", date: "10/22/2025", stores: {
     "Kalyan nagar": 371,
     "Basaweshwar Nagar Mnow": 332,
-    "Jakkur Mnow": 295,
+    "Jakkur_mnow": 295,
     "Begur Mnow": 562,
     "Thyagaraja Nagar Mnow": 278,
     "Brookfield Mnow": 743,
@@ -247,7 +247,7 @@ const reportData = [
   { day: "Thursday", date: "10/23/2025", stores: {
     "Kalyan nagar": 522,
     "Basaweshwar Nagar Mnow": 467,
-    "Jakkur Mnow": 416,
+    "Jakkur_mnow": 416,
     "Begur Mnow": 791,
     "Thyagaraja Nagar Mnow": 391,
     "Brookfield Mnow": 1045,
@@ -257,7 +257,7 @@ const reportData = [
   { day: "Friday", date: "10/24/2025", stores: {
     "Kalyan nagar": 508,
     "Basaweshwar Nagar Mnow": 454,
-    "Jakkur Mnow": 404,
+    "Jakkur_mnow": 404,
     "Begur Mnow": 769,
     "Thyagaraja Nagar Mnow": 380,
     "Brookfield Mnow": 1016,
@@ -267,7 +267,7 @@ const reportData = [
   { day: "Saturday", date: "10/25/2025", stores: {
     "Kalyan nagar": 579,
     "Basaweshwar Nagar Mnow": 518,
-    "Jakkur Mnow": 461,
+    "Jakkur_mnow": 461,
     "Begur Mnow": 877,
     "Thyagaraja Nagar Mnow": 433,
     "Brookfield Mnow": 1158,
@@ -277,7 +277,7 @@ const reportData = [
   { day: "Sunday", date: "10/26/2025", stores: {
     "Kalyan nagar": 535,
     "Basaweshwar Nagar Mnow": 479,
-    "Jakkur Mnow": 426,
+    "Jakkur_mnow": 426,
     "Begur Mnow": 810,
     "Thyagaraja Nagar Mnow": 401,
     "Brookfield Mnow": 1070,
@@ -287,7 +287,7 @@ const reportData = [
   { day: "Monday", date: "10/27/2025", stores: {
     "Kalyan nagar": 306,
     "Basaweshwar Nagar Mnow": 274,
-    "Jakkur Mnow": 243,
+    "Jakkur_mnow": 243,
     "Begur Mnow": 463,
     "Thyagaraja Nagar Mnow": 229,
     "Brookfield Mnow": 611,
@@ -297,7 +297,7 @@ const reportData = [
   { day: "Tuesday", date: "10/28/2025", stores: {
     "Kalyan nagar": 366,
     "Basaweshwar Nagar Mnow": 327,
-    "Jakkur Mnow": 291,
+    "Jakkur_mnow": 291,
     "Begur Mnow": 554,
     "Thyagaraja Nagar Mnow": 274,
     "Brookfield Mnow": 731,
@@ -307,7 +307,7 @@ const reportData = [
   { day: "Wednesday", date: "10/29/2025", stores: {
     "Kalyan nagar": 371,
     "Basaweshwar Nagar Mnow": 332,
-    "Jakkur Mnow": 295,
+    "Jakkur_mnow": 295,
     "Begur Mnow": 562,
     "Thyagaraja Nagar Mnow": 278,
     "Brookfield Mnow": 743,
@@ -317,7 +317,7 @@ const reportData = [
   { day: "Thursday", date: "10/30/2025", stores: {
     "Kalyan nagar": 444,
     "Basaweshwar Nagar Mnow": 397,
-    "Jakkur Mnow": 353,
+    "Jakkur_mnow": 353,
     "Begur Mnow": 672,
     "Thyagaraja Nagar Mnow": 332,
     "Brookfield Mnow": 888,
@@ -327,7 +327,7 @@ const reportData = [
   { day: "Friday", date: "10/31/2025", stores: {
     "Kalyan nagar": 508,
      "Basaweshwar Nagar Mnow": 454,
-    "Jakkur Mnow": 404,
+    "Jakkur_mnow": 404,
     "Begur Mnow": 769,
     "Thyagaraja Nagar Mnow": 380,
     "Brookfield Mnow": 1016,
@@ -338,7 +338,7 @@ const reportData = [
   { day: "Saturday", date: "11/1/2025", stores: {
     "Kalyan nagar": 619,
     "Basaweshwar Nagar Mnow": 406,
-    "Jakkur Mnow": 414,
+    "Jakkur_mnow": 414,
     "Begur Mnow": 711,
     "Thyagaraja Nagar Mnow": 535,
     "Brookfield Mnow": 1050,
@@ -349,7 +349,7 @@ const reportData = [
   { day: "Sunday", date: "11/2/2025", stores: {
     "Kalyan nagar": 583,
     "Basaweshwar Nagar Mnow": 383,
-    "Jakkur Mnow": 390,
+    "Jakkur_mnow": 390,
     "Begur Mnow": 670,
     "Thyagaraja Nagar Mnow": 504,
     "Brookfield Mnow": 990,
@@ -360,7 +360,7 @@ const reportData = [
   { day: "Monday", date: "11/3/2025", stores: {
     "Kalyan nagar": 372,
     "Basaweshwar Nagar Mnow": 244,
-    "Jakkur Mnow": 248,
+    "Jakkur_mnow": 248,
     "Begur Mnow": 427,
     "Thyagaraja Nagar Mnow": 321,
     "Brookfield Mnow": 631,
@@ -371,7 +371,7 @@ const reportData = [
   { day: "Tuesday", date: "11/4/2025", stores: {
     "Kalyan nagar": 408,
     "Basaweshwar Nagar Mnow": 268,
-    "Jakkur Mnow": 273,
+    "Jakkur_mnow": 273,
     "Begur Mnow": 469,
     "Thyagaraja Nagar Mnow": 353,
     "Brookfield Mnow": 693,
@@ -382,7 +382,7 @@ const reportData = [
   { day: "Wednesday", date: "11/5/2025", stores: {
     "Kalyan nagar": 455,
     "Basaweshwar Nagar Mnow": 299,
-    "Jakkur Mnow": 304,
+    "Jakkur_mnow": 304,
     "Begur Mnow": 523,
     "Thyagaraja Nagar Mnow": 393,
     "Brookfield Mnow": 773,
@@ -393,7 +393,7 @@ const reportData = [
   { day: "Thursday", date: "11/6/2025", stores: {
     "Kalyan nagar": 553,
     "Basaweshwar Nagar Mnow": 363,
-    "Jakkur Mnow": 370,
+    "Jakkur_mnow": 370,
     "Begur Mnow": 635,
     "Thyagaraja Nagar Mnow": 478,
     "Brookfield Mnow": 938,
@@ -404,7 +404,7 @@ const reportData = [
   { day: "Friday", date: "11/7/2025", stores: {
     "Kalyan nagar": 591,
     "Basaweshwar Nagar Mnow": 388,
-    "Jakkur Mnow": 395,
+    "Jakkur_mnow": 395,
     "Begur Mnow": 679,
     "Thyagaraja Nagar Mnow": 511,
     "Brookfield Mnow": 1003,
@@ -415,7 +415,7 @@ const reportData = [
   { day: "Saturday", date: "11/8/2025", stores: {
     "Kalyan nagar": 527,
     "Basaweshwar Nagar Mnow": 346,
-    "Jakkur Mnow": 353,
+    "Jakkur_mnow": 353,
     "Begur Mnow": 606,
     "Thyagaraja Nagar Mnow": 456,
     "Brookfield Mnow": 895,
@@ -426,7 +426,7 @@ const reportData = [
   { day: "Sunday", date: "11/9/2025", stores: {
     "Kalyan nagar": 573,
     "Basaweshwar Nagar Mnow": 376,
-    "Jakkur Mnow": 383,
+    "Jakkur_mnow": 383,
     "Begur Mnow": 658,
     "Thyagaraja Nagar Mnow": 495,
     "Brookfield Mnow": 972,
@@ -437,7 +437,7 @@ const reportData = [
   { day: "Monday", date: "11/10/2025", stores: {
     "Kalyan nagar": 340,
     "Basaweshwar Nagar Mnow": 223,
-    "Jakkur Mnow": 227,
+    "Jakkur_mnow": 227,
     "Begur Mnow": 391,
     "Thyagaraja Nagar Mnow": 294,
     "Brookfield Mnow": 577,
@@ -448,7 +448,7 @@ const reportData = [
   { day: "Tuesday", date: "11/11/2025", stores: {
     "Kalyan nagar": 399,
     "Basaweshwar Nagar Mnow": 262,
-    "Jakkur Mnow": 267,
+    "Jakkur_mnow": 267,
     "Begur Mnow": 459,
     "Thyagaraja Nagar Mnow": 345,
     "Brookfield Mnow": 677,
@@ -463,23 +463,23 @@ const reportData = [
 // we add the new hour percentages data here
 
 const hourPercentages = [
-    { hour: "6-7",   Sunday: 0.90,  Monday: 1.01,  Tuesday: 1.38,  Wednesday: 1.89,  Thursday: 1.38,  Friday: 0.71,  Saturday: 1.25 },
-  { hour: "7-8",   Sunday: 2.88,  Monday: 3.76,  Tuesday: 4.55,  Wednesday: 5.64,  Thursday: 4.15,  Friday: 2.14,  Saturday: 4.24 },
-  { hour: "8-9",   Sunday: 7.01,  Monday: 8.77,  Tuesday: 9.92,  Wednesday: 12.40, Thursday: 9.13,  Friday: 4.42,  Saturday: 9.02 },
-  { hour: "9-10",  Sunday: 12.38, Monday: 14.77, Tuesday: 15.95, Wednesday: 20.17, Thursday: 15.47, Friday: 7.41,  Saturday: 15.17 },
-  { hour: "10-11", Sunday: 19.16, Monday: 21.04, Tuesday: 23.17, Wednesday: 28.13, Thursday: 22.15, Friday: 11.05, Saturday: 21.50 },
-  { hour: "11-12", Sunday: 27.75, Monday: 27.92, Tuesday: 30.48, Wednesday: 35.66, Thursday: 29.09, Friday: 15.23, Saturday: 27.95 },
-  { hour: "12-1",  Sunday: 36.29, Monday: 34.96, Tuesday: 37.62, Wednesday: 42.98, Thursday: 36.23, Friday: 19.63, Saturday: 36.32 },
-  { hour: "1-2",   Sunday: 43.70, Monday: 41.78, Tuesday: 44.06, Wednesday: 50.06, Thursday: 42.52, Friday: 23.80, Saturday: 43.11 },
-  { hour: "2-3",   Sunday: 51.29, Monday: 48.09, Tuesday: 50.08, Wednesday: 56.52, Thursday: 49.01, Friday: 27.92, Saturday: 51.32 },
-  { hour: "3-4",   Sunday: 58.10, Monday: 54.46, Tuesday: 56.45, Wednesday: 63.08, Thursday: 55.21, Friday: 32.02, Saturday: 58.63 },
-  { hour: "4-5",   Sunday: 65.36, Monday: 61.29, Tuesday: 63.20, Wednesday: 69.60, Thursday: 61.49, Friday: 35.98, Saturday: 65.95 },
-  { hour: "5-6",   Sunday: 72.17, Monday: 68.42, Tuesday: 70.13, Wednesday: 75.50, Thursday: 68.53, Friday: 39.94, Saturday: 73.29 },
-  { hour: "6-7",   Sunday: 79.10, Monday: 75.78, Tuesday: 77.07, Wednesday: 81.54, Thursday: 75.56, Friday: 43.99, Saturday: 79.97 },
-  { hour: "7-8",   Sunday: 85.55, Monday: 82.94, Tuesday: 83.59, Wednesday: 88.16, Thursday: 83.60, Friday: 48.56, Saturday: 86.25 },
-  { hour: "8-9",   Sunday: 91.43, Monday: 89.85, Tuesday: 89.56, Wednesday: 91.93, Thursday: 90.22, Friday: 71.53, Saturday: 91.88 },
-  { hour: "9-10",  Sunday: 96.22, Monday: 95.46, Tuesday: 95.60, Wednesday: 96.38, Thursday: 95.42, Friday: 89.86, Saturday: 96.52 },
-  { hour: "10-11", Sunday: 100.00, Monday: 99.98, Tuesday: 100.00, Wednesday: 100.00, Thursday: 100.00, Friday: 95.42, Saturday: 100.01 }
+  { hour: "6-7",   Sunday: 0.57,  Monday: 1.20,  Tuesday: 1.54,  Wednesday: 1.32,  Thursday: 1.23,  Friday: 1.38,  Saturday: 1.11 },
+  { hour: "7-8",   Sunday: 1.68,  Monday: 3.74,  Tuesday: 4.57,  Wednesday: 4.25,  Thursday: 3.97,  Friday: 4.15,  Saturday: 3.82 },
+  { hour: "8-9",   Sunday: 4.57,  Monday: 7.95,  Tuesday: 9.25,  Wednesday: 9.21,  Thursday: 8.73,  Friday: 9.50,  Saturday: 7.85 },
+  { hour: "9-10",  Sunday: 10.43, Monday: 13.90, Tuesday: 14.93, Wednesday: 15.05, Thursday: 15.06, Friday: 15.84, Saturday: 14.16 },
+  { hour: "10-11", Sunday: 17.34, Monday: 20.67, Tuesday: 22.29, Wednesday: 22.70, Thursday: 21.93, Friday: 23.18, Saturday: 20.56 },
+  { hour: "11-12", Sunday: 25.73, Monday: 28.04, Tuesday: 28.46, Wednesday: 30.44, Thursday: 29.58, Friday: 30.51, Saturday: 27.06 },
+  { hour: "12-1",  Sunday: 33.96, Monday: 34.83, Tuesday: 35.31, Wednesday: 37.17, Thursday: 36.61, Friday: 38.49, Saturday: 35.71 },
+  { hour: "1-2",   Sunday: 41.19, Monday: 41.21, Tuesday: 41.77, Wednesday: 43.08, Thursday: 42.81, Friday: 45.37, Saturday: 43.99 },
+  { hour: "2-3",   Sunday: 48.65, Monday: 47.49, Tuesday: 47.20, Wednesday: 49.37, Thursday: 49.47, Friday: 51.46, Saturday: 51.40 },
+  { hour: "3-4",   Sunday: 55.32, Monday: 53.73, Tuesday: 52.63, Wednesday: 55.65, Thursday: 55.35, Friday: 57.36, Saturday: 58.81 },
+  { hour: "4-5",   Sunday: 63.10, Monday: 60.98, Tuesday: 59.14, Wednesday: 62.75, Thursday: 61.85, Friday: 63.59, Saturday: 65.81 },
+  { hour: "5-6",   Sunday: 70.83, Monday: 68.44, Tuesday: 65.51, Wednesday: 69.75, Thursday: 68.56, Friday: 70.56, Saturday: 73.29 },
+  { hour: "6-7",   Sunday: 78.05, Monday: 74.83, Tuesday: 72.41, Wednesday: 76.88, Thursday: 75.70, Friday: 77.49, Saturday: 79.93 },
+  { hour: "7-8",   Sunday: 85.12, Monday: 82.15, Tuesday: 80.19, Wednesday: 84.34, Thursday: 83.52, Friday: 84.78, Saturday: 86.40 },
+  { hour: "8-9",   Sunday: 91.00, Monday: 89.41, Tuesday: 87.49, Wednesday: 90.93, Thursday: 90.41, Friday: 90.91, Saturday: 91.35 },
+  { hour: "9-10",  Sunday: 96.99, Monday: 95.42, Tuesday: 94.73, Wednesday: 96.04, Thursday: 96.24, Friday: 96.24, Saturday: 96.18 },
+  { hour: "10-11", Sunday: 100.01, Monday: 99.99, Tuesday: 100.00, Wednesday: 99.96, Thursday: 100.02, Friday: 100.01, Saturday: 99.99 }
 ];
 
 
@@ -785,7 +785,7 @@ function processFile() {
         const includedStores = [
             "Kalyan nagar", 
             "Basaweshwar Nagar Mnow", 
-            "Jakkur Mnow", 
+            "Jakkur_mnow", 
             "Begur Mnow", 
             "Thyagaraja Nagar Mnow", 
             "Brookfield Mnow", 
@@ -931,7 +931,7 @@ processFile = function() {
         const includedStores = [
             "Kalyan nagar", 
             "Basaweshwar Nagar Mnow", 
-            "Jakkur Mnow", 
+            "Jakkur_mnow", 
             "Begur Mnow", 
             "Thyagaraja Nagar Mnow", 
             "Brookfield Mnow", 
@@ -1066,7 +1066,7 @@ processFile = function() {
         const includedStores = [
             "Kalyan nagar", 
             "Basaweshwar Nagar Mnow", 
-            "Jakkur Mnow", 
+            "Jakkur_mnow", 
             "Begur Mnow", 
             "Thyagaraja Nagar Mnow", 
             "Brookfield Mnow", 
@@ -1585,7 +1585,7 @@ document.getElementById("finalTableBtn").addEventListener("click", function () {
 const finalStores = [
   "Kalyan nagar ",
   "Basaweshwar Nagar Mnow",
-  "Jakkur Mnow",
+  "Jakkur_mnow",
   "Begur Mnow",
   "Thyagaraja Nagar Mnow",
   "Brookfield Mnow",
