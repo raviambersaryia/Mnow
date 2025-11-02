@@ -8,8 +8,8 @@ function zippeeToggleMenu() {
 const reportData = [
  { day: "Wednesday", date: "10/1/2025", stores: {
     "Kalyan nagar": 720,
-    "Basaweshwar Nagar Mnow": 644,
-    "Jakkur Mnow": 573,
+    "Basaveshwar Nagar_mnow": 644,
+    "Jakkur_mnow": 573,
     "Begur Mnow": 1090,
     "Thyagaraja Nagar Mnow": 539,
     "Brookfield Mnow": 1440,
@@ -18,8 +18,8 @@ const reportData = [
   }, total: 6702 },
   { day: "Thursday", date: "10/2/2025", stores: {
     "Kalyan nagar": 825,
-    "Basaweshwar Nagar Mnow": 738,
-    "Jakkur Mnow": 657,
+    "Basaveshwar Nagar_mnow": 738,
+    "Jakkur_mnow": 657,
     "Begur Mnow": 1249,
     "Thyagaraja Nagar Mnow": 617,
     "Brookfield Mnow": 1650,
@@ -28,8 +28,8 @@ const reportData = [
   }, total: 7680 },
   { day: "Friday", date: "10/3/2025", stores: {
     "Kalyan nagar": 611,
-    "Basaweshwar Nagar Mnow": 547,
-    "Jakkur Mnow": 486,
+    "Basaveshwar Nagar_mnow": 547,
+    "Jakkur_mnow": 486,
     "Begur Mnow": 925,
     "Thyagaraja Nagar Mnow": 457,
     "Brookfield Mnow": 1222,
@@ -38,8 +38,8 @@ const reportData = [
   }, total: 5688 },
   { day: "Saturday", date: "10/4/2025", stores: {
     "Kalyan nagar": 568,
-    "Basaweshwar Nagar Mnow": 508,
-    "Jakkur Mnow": 452,
+    "Basaveshwar Nagar_mnow": 508,
+    "Jakkur_mnow": 452,
     "Begur Mnow": 860,
     "Thyagaraja Nagar Mnow": 424,
     "Brookfield Mnow": 1135,
@@ -48,8 +48,8 @@ const reportData = [
   }, total: 5284 },
   { day: "Sunday", date: "10/5/2025", stores: {
     "Kalyan nagar": 576,
-    "Basaweshwar Nagar Mnow": 516,
-    "Jakkur Mnow": 459,
+    "Basaveshwar Nagar_mnow": 516,
+    "Jakkur_mnow": 459,
     "Begur Mnow": 872,
     "Thyagaraja Nagar Mnow": 431,
     "Brookfield Mnow": 1152,
@@ -58,8 +58,8 @@ const reportData = [
   }, total: 5362 },
   { day: "Monday", date: "10/6/2025", stores: {
     "Kalyan nagar": 301,
-    "Basaweshwar Nagar Mnow": 269,
-    "Jakkur Mnow": 240,
+    "Basaveshwar Nagar_mnow": 269,
+    "Jakkur_mnow": 240,
     "Begur Mnow": 456,
     "Thyagaraja Nagar Mnow": 225,
     "Brookfield Mnow": 602,
@@ -68,8 +68,8 @@ const reportData = [
   }, total: 2803 },
   { day: "Tuesday", date: "10/7/2025", stores: {
     "Kalyan nagar": 424,
-    "Basaweshwar Nagar Mnow": 380,
-    "Jakkur Mnow": 338,
+    "Basaveshwar Nagar_mnow": 380,
+    "Jakkur_mnow": 338,
     "Begur Mnow": 642,
     "Thyagaraja Nagar Mnow": 318,
     "Brookfield Mnow": 849,
@@ -78,8 +78,8 @@ const reportData = [
   }, total: 3951 },
   { day: "Wednesday", date: "10/8/2025", stores: {
     "Kalyan nagar": 457,
-    "Basaweshwar Nagar Mnow": 409,
-    "Jakkur Mnow": 363,
+    "Basaveshwar Nagar_mnow": 409,
+    "Jakkur_mnow": 363,
     "Begur Mnow": 691,
     "Thyagaraja Nagar Mnow": 342,
     "Brookfield Mnow": 913,
@@ -88,8 +88,8 @@ const reportData = [
   }, total: 4251 },
   { day: "Thursday", date: "10/9/2025", stores: {
     "Kalyan nagar": 527,
-    "Basaweshwar Nagar Mnow": 472,
-    "Jakkur Mnow": 419,
+    "Basaveshwar Nagar_mnow": 472,
+    "Jakkur_mnow": 419,
     "Begur Mnow": 798,
     "Thyagaraja Nagar Mnow": 394,
     "Brookfield Mnow": 1054,
@@ -98,8 +98,8 @@ const reportData = [
   }, total: 4906 },
   { day: "Friday", date: "10/10/2025", stores: {
     "Kalyan nagar": 610,
-    "Basaweshwar Nagar Mnow": 546,
-    "Jakkur Mnow": 486,
+    "Basaveshwar Nagar_mnow": 546,
+    "Jakkur_mnow": 486,
     "Begur Mnow": 924,
     "Thyagaraja Nagar Mnow": 457,
     "Brookfield Mnow": 1221,
@@ -108,8 +108,8 @@ const reportData = [
   }, total: 5682 },
   { day: "Saturday", date: "10/11/2025", stores: {
     "Kalyan nagar": 619,
-    "Basaweshwar Nagar Mnow": 554,
-    "Jakkur Mnow": 492,
+    "Basaveshwar Nagar_mnow": 554,
+    "Jakkur_mnow": 492,
     "Begur Mnow": 937,
     "Thyagaraja Nagar Mnow": 463,
     "Brookfield Mnow": 1238,
@@ -118,8 +118,8 @@ const reportData = [
   }, total: 5761 },
   { day: "Sunday", date: "10/12/2025", stores: {
     "Kalyan nagar": 639,
-    "Basaweshwar Nagar Mnow": 572,
-    "Jakkur Mnow": 509,
+    "Basaveshwar Nagar_mnow": 572,
+    "Jakkur_mnow": 509,
     "Begur Mnow": 968,
     "Thyagaraja Nagar Mnow": 478,
     "Brookfield Mnow": 1279,
@@ -128,8 +128,8 @@ const reportData = [
   }, total: 5952 },
   { day: "Monday", date: "10/13/2025", stores: {
     "Kalyan nagar": 360,
-    "Basaweshwar Nagar Mnow": 322,
-    "Jakkur Mnow": 286,
+    "Basaveshwar Nagar_mnow": 322,
+    "Jakkur_mnow": 286,
     "Begur Mnow": 544,
     "Thyagaraja Nagar Mnow": 269,
     "Brookfield Mnow": 719,
@@ -138,8 +138,8 @@ const reportData = [
   }, total: 3348 },
   { day: "Tuesday", date: "10/14/2025", stores: {
     "Kalyan nagar": 448,
-    "Basaweshwar Nagar Mnow": 401,
-    "Jakkur Mnow": 357,
+    "Basaveshwar Nagar_mnow": 401,
+    "Jakkur_mnow": 357,
     "Begur Mnow": 678,
     "Thyagaraja Nagar Mnow": 335,
     "Brookfield Mnow": 896,
@@ -148,8 +148,8 @@ const reportData = [
   }, total: 4171 },
   { day: "Wednesday", date: "10/15/2025", stores: {
     "Kalyan nagar": 501,
-    "Basaweshwar Nagar Mnow": 449,
-    "Jakkur Mnow": 399,
+    "Basaveshwar Nagar_mnow": 449,
+    "Jakkur_mnow": 399,
     "Begur Mnow": 759,
     "Thyagaraja Nagar Mnow": 375,
     "Brookfield Mnow": 1003,
@@ -160,8 +160,8 @@ const reportData = [
 {
   day: "Thursday", date: "10/16/2025", stores: {
     "Kalyan nagar": 587,
-    "Basaweshwar Nagar Mnow": 525,
-    "Jakkur Mnow": 466,
+    "Basaveshwar Nagar_mnow": 525,
+    "Jakkur_mnow": 466,
     "Begur Mnow": 888,
     "Thyagaraja Nagar Mnow": 439,
     "Brookfield Mnow": 1173,
@@ -173,8 +173,8 @@ const reportData = [
 {
   day: "Friday", date: "10/17/2025", stores: {
     "Kalyan nagar": 734,
-    "Basaweshwar Nagar Mnow": 657,
-    "Jakkur Mnow": 584,
+    "Basaveshwar Nagar_mnow": 657,
+    "Jakkur_mnow": 584,
     "Begur Mnow": 1112,
     "Thyagaraja Nagar Mnow": 550,
     "Brookfield Mnow": 1469,
@@ -186,8 +186,8 @@ const reportData = [
 {
   day: "Saturday", date: "10/18/2025", stores: {
     "Kalyan nagar": 686,
-    "Basaweshwar Nagar Mnow": 614,
-    "Jakkur Mnow": 546,
+    "Basaveshwar Nagar_mnow": 614,
+    "Jakkur_mnow": 546,
     "Begur Mnow": 1039,
     "Thyagaraja Nagar Mnow": 514,
     "Brookfield Mnow": 1373,
@@ -199,8 +199,8 @@ const reportData = [
 {
   day: "Sunday", date: "10/19/2025", stores: {
     "Kalyan nagar": 677,
-    "Basaweshwar Nagar Mnow": 606,
-    "Jakkur Mnow": 540,
+    "Basaveshwar Nagar_mnow": 606,
+    "Jakkur_mnow": 540,
     "Begur Mnow": 1026,
     "Thyagaraja Nagar Mnow": 507,
     "Brookfield Mnow": 1356,
@@ -212,8 +212,8 @@ const reportData = [
 {
   day: "Monday", date: "10/20/2025", stores: {
     "Kalyan nagar": 423,
-    "Basaweshwar Nagar Mnow": 378,
-    "Jakkur Mnow": 336,
+    "Basaveshwar Nagar_mnow": 378,
+    "Jakkur_mnow": 336,
     "Begur Mnow": 640,
     "Thyagaraja Nagar Mnow": 316,
     "Brookfield Mnow": 846,
@@ -225,8 +225,8 @@ const reportData = [
 {
   day: "Tuesday", date: "10/21/2025", stores: {
     "Kalyan nagar": 486,
-    "Basaweshwar Nagar Mnow": 435,
-    "Jakkur Mnow": 387,
+    "Basaveshwar Nagar_mnow": 435,
+    "Jakkur_mnow": 387,
     "Begur Mnow": 736,
     "Thyagaraja Nagar Mnow": 364,
     "Brookfield Mnow": 973,
@@ -236,8 +236,8 @@ const reportData = [
 },
   { day: "Wednesday", date: "10/22/2025", stores: {
     "Kalyan nagar": 371,
-    "Basaweshwar Nagar Mnow": 332,
-    "Jakkur Mnow": 295,
+    "Basaveshwar Nagar_mnow": 332,
+    "Jakkur_mnow": 295,
     "Begur Mnow": 562,
     "Thyagaraja Nagar Mnow": 278,
     "Brookfield Mnow": 743,
@@ -246,8 +246,8 @@ const reportData = [
   }, total: 3456 },
   { day: "Thursday", date: "10/23/2025", stores: {
     "Kalyan nagar": 522,
-    "Basaweshwar Nagar Mnow": 467,
-    "Jakkur Mnow": 416,
+    "Basaveshwar Nagar_mnow": 467,
+    "Jakkur_mnow": 416,
     "Begur Mnow": 791,
     "Thyagaraja Nagar Mnow": 391,
     "Brookfield Mnow": 1045,
@@ -256,8 +256,8 @@ const reportData = [
   }, total: 4863 },
   { day: "Friday", date: "10/24/2025", stores: {
     "Kalyan nagar": 508,
-    "Basaweshwar Nagar Mnow": 454,
-    "Jakkur Mnow": 404,
+    "Basaveshwar Nagar_mnow": 454,
+    "Jakkur_mnow": 404,
     "Begur Mnow": 769,
     "Thyagaraja Nagar Mnow": 380,
     "Brookfield Mnow": 1016,
@@ -266,8 +266,8 @@ const reportData = [
   }, total: 4727 },
   { day: "Saturday", date: "10/25/2025", stores: {
     "Kalyan nagar": 579,
-    "Basaweshwar Nagar Mnow": 518,
-    "Jakkur Mnow": 461,
+    "Basaveshwar Nagar_mnow": 518,
+    "Jakkur_mnow": 461,
     "Begur Mnow": 877,
     "Thyagaraja Nagar Mnow": 433,
     "Brookfield Mnow": 1158,
@@ -276,8 +276,8 @@ const reportData = [
   }, total: 5391 },
   { day: "Sunday", date: "10/26/2025", stores: {
     "Kalyan nagar": 535,
-    "Basaweshwar Nagar Mnow": 479,
-    "Jakkur Mnow": 426,
+    "Basaveshwar Nagar_mnow": 479,
+    "Jakkur_mnow": 426,
     "Begur Mnow": 810,
     "Thyagaraja Nagar Mnow": 401,
     "Brookfield Mnow": 1070,
@@ -286,8 +286,8 @@ const reportData = [
   }, total: 4982 },
   { day: "Monday", date: "10/27/2025", stores: {
     "Kalyan nagar": 306,
-    "Basaweshwar Nagar Mnow": 274,
-    "Jakkur Mnow": 243,
+    "Basaveshwar Nagar_mnow": 274,
+    "Jakkur_mnow": 243,
     "Begur Mnow": 463,
     "Thyagaraja Nagar Mnow": 229,
     "Brookfield Mnow": 611,
@@ -296,8 +296,8 @@ const reportData = [
   }, total: 2846 },
   { day: "Tuesday", date: "10/28/2025", stores: {
     "Kalyan nagar": 366,
-    "Basaweshwar Nagar Mnow": 327,
-    "Jakkur Mnow": 291,
+    "Basaveshwar Nagar_mnow": 327,
+    "Jakkur_mnow": 291,
     "Begur Mnow": 554,
     "Thyagaraja Nagar Mnow": 274,
     "Brookfield Mnow": 731,
@@ -306,8 +306,8 @@ const reportData = [
   }, total: 3404 },
   { day: "Wednesday", date: "10/29/2025", stores: {
     "Kalyan nagar": 371,
-    "Basaweshwar Nagar Mnow": 332,
-    "Jakkur Mnow": 295,
+    "Basaveshwar Nagar_mnow": 332,
+    "Jakkur_mnow": 295,
     "Begur Mnow": 562,
     "Thyagaraja Nagar Mnow": 278,
     "Brookfield Mnow": 743,
@@ -316,8 +316,8 @@ const reportData = [
   }, total: 3456 },
   { day: "Thursday", date: "10/30/2025", stores: {
     "Kalyan nagar": 444,
-    "Basaweshwar Nagar Mnow": 397,
-    "Jakkur Mnow": 353,
+    "Basaveshwar Nagar_mnow": 397,
+    "Jakkur_mnow": 353,
     "Begur Mnow": 672,
     "Thyagaraja Nagar Mnow": 332,
     "Brookfield Mnow": 888,
@@ -326,8 +326,8 @@ const reportData = [
   }, total: 4132 },
   { day: "Friday", date: "10/31/2025", stores: {
     "Kalyan nagar": 508,
-     "Basaweshwar Nagar Mnow": 454,
-    "Jakkur Mnow": 404,
+     "Basaveshwar Nagar_mnow": 454,
+    "Jakkur_mnow": 404,
     "Begur Mnow": 769,
     "Thyagaraja Nagar Mnow": 380,
     "Brookfield Mnow": 1016,
@@ -337,8 +337,8 @@ const reportData = [
 
   { day: "Saturday", date: "11/1/2025", stores: {
     "Kalyan nagar": 619,
-    "Basaweshwar Nagar Mnow": 406,
-    "Jakkur Mnow": 414,
+    "Basaveshwar Nagar_mnow": 406,
+    "Jakkur_mnow": 414,
     "Begur Mnow": 711,
     "Thyagaraja Nagar Mnow": 535,
     "Brookfield Mnow": 1050,
@@ -348,8 +348,8 @@ const reportData = [
 
   { day: "Sunday", date: "11/2/2025", stores: {
     "Kalyan nagar": 583,
-    "Basaweshwar Nagar Mnow": 383,
-    "Jakkur Mnow": 390,
+    "Basaveshwar Nagar_mnow": 383,
+    "Jakkur_mnow": 390,
     "Begur Mnow": 670,
     "Thyagaraja Nagar Mnow": 504,
     "Brookfield Mnow": 990,
@@ -359,8 +359,8 @@ const reportData = [
 
   { day: "Monday", date: "11/3/2025", stores: {
     "Kalyan nagar": 372,
-    "Basaweshwar Nagar Mnow": 244,
-    "Jakkur Mnow": 248,
+    "Basaveshwar Nagar_mnow": 244,
+    "Jakkur_mnow": 248,
     "Begur Mnow": 427,
     "Thyagaraja Nagar Mnow": 321,
     "Brookfield Mnow": 631,
@@ -370,8 +370,8 @@ const reportData = [
 
   { day: "Tuesday", date: "11/4/2025", stores: {
     "Kalyan nagar": 408,
-    "Basaweshwar Nagar Mnow": 268,
-    "Jakkur Mnow": 273,
+    "Basaveshwar Nagar_mnow": 268,
+    "Jakkur_mnow": 273,
     "Begur Mnow": 469,
     "Thyagaraja Nagar Mnow": 353,
     "Brookfield Mnow": 693,
@@ -381,8 +381,8 @@ const reportData = [
 
   { day: "Wednesday", date: "11/5/2025", stores: {
     "Kalyan nagar": 455,
-    "Basaweshwar Nagar Mnow": 299,
-    "Jakkur Mnow": 304,
+    "Basaveshwar Nagar_mnow": 299,
+    "Jakkur_mnow": 304,
     "Begur Mnow": 523,
     "Thyagaraja Nagar Mnow": 393,
     "Brookfield Mnow": 773,
@@ -392,8 +392,8 @@ const reportData = [
 
   { day: "Thursday", date: "11/6/2025", stores: {
     "Kalyan nagar": 553,
-    "Basaweshwar Nagar Mnow": 363,
-    "Jakkur Mnow": 370,
+    "Basaveshwar Nagar_mnow": 363,
+    "Jakkur_mnow": 370,
     "Begur Mnow": 635,
     "Thyagaraja Nagar Mnow": 478,
     "Brookfield Mnow": 938,
@@ -403,8 +403,8 @@ const reportData = [
 
   { day: "Friday", date: "11/7/2025", stores: {
     "Kalyan nagar": 591,
-    "Basaweshwar Nagar Mnow": 388,
-    "Jakkur Mnow": 395,
+    "Basaveshwar Nagar_mnow": 388,
+    "Jakkur_mnow": 395,
     "Begur Mnow": 679,
     "Thyagaraja Nagar Mnow": 511,
     "Brookfield Mnow": 1003,
@@ -414,8 +414,8 @@ const reportData = [
 
   { day: "Saturday", date: "11/8/2025", stores: {
     "Kalyan nagar": 527,
-    "Basaweshwar Nagar Mnow": 346,
-    "Jakkur Mnow": 353,
+    "Basaveshwar Nagar_mnow": 346,
+    "Jakkur_mnow": 353,
     "Begur Mnow": 606,
     "Thyagaraja Nagar Mnow": 456,
     "Brookfield Mnow": 895,
@@ -425,8 +425,8 @@ const reportData = [
 
   { day: "Sunday", date: "11/9/2025", stores: {
     "Kalyan nagar": 573,
-    "Basaweshwar Nagar Mnow": 376,
-    "Jakkur Mnow": 383,
+    "Basaveshwar Nagar_mnow": 376,
+    "Jakkur_mnow": 383,
     "Begur Mnow": 658,
     "Thyagaraja Nagar Mnow": 495,
     "Brookfield Mnow": 972,
@@ -436,8 +436,8 @@ const reportData = [
 
   { day: "Monday", date: "11/10/2025", stores: {
     "Kalyan nagar": 340,
-    "Basaweshwar Nagar Mnow": 223,
-    "Jakkur Mnow": 227,
+    "Basaveshwar Nagar_mnow": 223,
+    "Jakkur_mnow": 227,
     "Begur Mnow": 391,
     "Thyagaraja Nagar Mnow": 294,
     "Brookfield Mnow": 577,
@@ -447,8 +447,8 @@ const reportData = [
 
   { day: "Tuesday", date: "11/11/2025", stores: {
     "Kalyan nagar": 399,
-    "Basaweshwar Nagar Mnow": 262,
-    "Jakkur Mnow": 267,
+    "Basaveshwar Nagar_mnow": 262,
+    "Jakkur_mnow": 267,
     "Begur Mnow": 459,
     "Thyagaraja Nagar Mnow": 345,
     "Brookfield Mnow": 677,
@@ -784,8 +784,8 @@ function processFile() {
         let deepPainOrders = {};
         const includedStores = [
             "Kalyan nagar", 
-            "Basaweshwar Nagar Mnow", 
-            "Jakkur Mnow", 
+            "Basaveshwar Nagar_mnow", 
+            "Jakkur_mnow", 
             "Begur Mnow", 
             "Thyagaraja Nagar Mnow", 
             "Brookfield Mnow", 
@@ -930,8 +930,8 @@ processFile = function() {
         let deepPainOrders = {};
         const includedStores = [
             "Kalyan nagar", 
-            "Basaweshwar Nagar Mnow", 
-            "Jakkur Mnow", 
+            "Basaveshwar Nagar_mnow", 
+            "Jakkur_mnow", 
             "Begur Mnow", 
             "Thyagaraja Nagar Mnow", 
             "Brookfield Mnow", 
@@ -1065,8 +1065,8 @@ processFile = function() {
         let deepPainOrders = {};
         const includedStores = [
             "Kalyan nagar", 
-            "Basaweshwar Nagar Mnow", 
-            "Jakkur Mnow", 
+            "Basaveshwar Nagar_mnow", 
+            "Jakkur_mnow", 
             "Begur Mnow", 
             "Thyagaraja Nagar Mnow", 
             "Brookfield Mnow", 
@@ -1584,8 +1584,8 @@ document.getElementById("finalTableBtn").addEventListener("click", function () {
 // List of stores in the required order
 const finalStores = [
   "Kalyan nagar ",
-  "Basaweshwar Nagar Mnow",
-  "Jakkur Mnow",
+  "Basaveshwar Nagar_mnow",
+  "Jakkur_mnow",
   "Begur Mnow",
   "Thyagaraja Nagar Mnow",
   "Brookfield Mnow",
