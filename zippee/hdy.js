@@ -240,12 +240,83 @@ const reportData = [
     "Nizampet_mnow": 97
   }, total: 488 },
 
-  { day: "Tuesday", date: "11/11/2025", stores: {
-    "Manikonda_mnow": 137,
-    "Gachibowli_mnow": 220,
-    "Attapur_mnow": 102,
-    "Nizampet_mnow": 114
-  }, total: 573 }
+   {
+    day: "Tuesday",
+    date: "11/11/2025",
+    stores: {
+      "Manikonda_mnow": 137,
+      "Gachibowli_mnow": 220,
+      "Attapur_mnow": 102,
+      "Nizampet_mnow": 114
+    },
+    total: 573
+  },
+  {
+    day: "Wednesday",
+    date: "11/12/2025",
+    stores: {
+      "Manikonda_mnow": 166,
+      "Gachibowli_mnow": 265,
+      "Attapur_mnow": 123,
+      "Nizampet_mnow": 138
+    },
+    total: 692
+  },
+  {
+    day: "Thursday",
+    date: "11/13/2025",
+    stores: {
+      "Manikonda_mnow": 190,
+      "Gachibowli_mnow": 304,
+      "Attapur_mnow": 141,
+      "Nizampet_mnow": 158
+    },
+    total: 793
+  },
+  {
+    day: "Friday",
+    date: "11/14/2025",
+    stores: {
+      "Manikonda_mnow": 203,
+      "Gachibowli_mnow": 325,
+      "Attapur_mnow": 150,
+      "Nizampet_mnow": 169
+    },
+    total: 847
+  },
+  {
+    day: "Saturday",
+    date: "11/15/2025",
+    stores: {
+      "Manikonda_mnow": 182,
+      "Gachibowli_mnow": 291,
+      "Attapur_mnow": 135,
+      "Nizampet_mnow": 151
+    },
+    total: 759
+  },
+  {
+    day: "Sunday",
+    date: "11/16/2025",
+    stores: {
+      "Manikonda_mnow": 198,
+      "Gachibowli_mnow": 318,
+      "Attapur_mnow": 147,
+      "Nizampet_mnow": 165
+    },
+    total: 828
+  },
+  {
+    day: "Monday",
+    date: "11/17/2025",
+    stores: {
+      "Manikonda_mnow": 117,
+      "Gachibowli_mnow": 187,
+      "Attapur_mnow": 87,
+      "Nizampet_mnow": 97
+    },
+    total: 488
+  }
 
 ];
 
@@ -1339,11 +1410,11 @@ const finalStores = [
   "Kalyan nagar ",
   "Basaweshwar Nagar Mnow",
   "Jakkur_mnow",
-  "Begur Mnow",
+  "Begur_mnow",
   "Thyagaraja Nagar Mnow",
   "Brookfield Mnow",
-  "JP nagar Mnow",
-  "Sarjapur road Mnow"
+  "JP nagar_mnow",
+  "Sarjapur Road_mnow"
 ];
 
 // Show final table on button click
@@ -1442,9 +1513,9 @@ window.addEventListener('hashchange', handleHashChange);
 function normalizeStoreName(name) {
   if (!name) return '';
   let n = name.trim().toLowerCase();
-  if (n === 'jp nagar') return 'JP nagar Mnow';
+  if (n === 'jp nagar') return 'JP nagar_mnow';
 
-  if (n === 'sarjapur road') return 'Sarjapur road Mnow';
+  if (n === 'sarjapur road') return 'Sarjapur Road_mnow';
   return name;
 }
 
