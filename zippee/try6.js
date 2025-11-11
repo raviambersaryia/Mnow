@@ -7,7 +7,7 @@ function zippeeToggleMenu() {
 
 const reportData = [
  { day: "Wednesday", date: "10/1/2025", stores: {
-    "Kalyan nagar": 720,
+    "Kalyan Nagar_mnow": 720,
     "Basaveshwar Nagar_mnow": 644,
     "Jakkur_mnow": 573,
     "Begur_mnow": 1090,
@@ -17,7 +17,7 @@ const reportData = [
     "Sarjapur Road_mnow": 926
   }, total: 6702 },
   { day: "Thursday", date: "10/2/2025", stores: {
-    "Kalyan nagar": 825,
+    "Kalyan Nagar_mnow": 825,
     "Basaveshwar Nagar_mnow": 738,
     "Jakkur_mnow": 657,
     "Begur_mnow": 1249,
@@ -27,7 +27,7 @@ const reportData = [
     "Sarjapur Road_mnow": 1062
   }, total: 7680 },
   { day: "Friday", date: "10/3/2025", stores: {
-    "Kalyan nagar": 611,
+    "Kalyan Nagar_mnow": 611,
     "Basaveshwar Nagar_mnow": 547,
     "Jakkur_mnow": 486,
     "Begur_mnow": 925,
@@ -37,7 +37,7 @@ const reportData = [
     "Sarjapur Road_mnow": 786
   }, total: 5688 },
   { day: "Saturday", date: "10/4/2025", stores: {
-    "Kalyan nagar": 568,
+    "Kalyan Nagar_mnow": 568,
     "Basaveshwar Nagar_mnow": 508,
     "Jakkur_mnow": 452,
     "Begur_mnow": 860,
@@ -47,7 +47,7 @@ const reportData = [
     "Sarjapur Road_mnow": 731
   }, total: 5284 },
   { day: "Sunday", date: "10/5/2025", stores: {
-    "Kalyan nagar": 576,
+    "Kalyan Nagar_mnow": 576,
     "Basaveshwar Nagar_mnow": 516,
     "Jakkur_mnow": 459,
     "Begur_mnow": 872,
@@ -57,7 +57,7 @@ const reportData = [
     "Sarjapur Road_mnow": 741
   }, total: 5362 },
   { day: "Monday", date: "10/6/2025", stores: {
-    "Kalyan nagar": 301,
+    "Kalyan Nagar_mnow": 301,
     "Basaveshwar Nagar_mnow": 269,
     "Jakkur_mnow": 240,
     "Begur_mnow": 456,
@@ -67,7 +67,7 @@ const reportData = [
     "Sarjapur Road_mnow": 388
   }, total: 2803 },
   { day: "Tuesday", date: "10/7/2025", stores: {
-    "Kalyan nagar": 424,
+    "Kalyan Nagar_mnow": 424,
     "Basaveshwar Nagar_mnow": 380,
     "Jakkur_mnow": 338,
     "Begur_mnow": 642,
@@ -77,7 +77,7 @@ const reportData = [
     "Sarjapur Road_mnow": 546
   }, total: 3951 },
   { day: "Wednesday", date: "10/8/2025", stores: {
-    "Kalyan nagar": 457,
+    "Kalyan Nagar_mnow": 457,
     "Basaveshwar Nagar_mnow": 409,
     "Jakkur_mnow": 363,
     "Begur_mnow": 691,
@@ -87,7 +87,7 @@ const reportData = [
     "Sarjapur Road_mnow": 588
   }, total: 4251 },
   { day: "Thursday", date: "10/9/2025", stores: {
-    "Kalyan nagar": 527,
+    "Kalyan Nagar_mnow": 527,
     "Basaveshwar Nagar_mnow": 472,
     "Jakkur_mnow": 419,
     "Begur_mnow": 798,
@@ -97,7 +97,7 @@ const reportData = [
     "Sarjapur Road_mnow": 678
   }, total: 4906 },
   { day: "Friday", date: "10/10/2025", stores: {
-    "Kalyan nagar": 610,
+    "Kalyan Nagar_mnow": 610,
     "Basaveshwar Nagar_mnow": 546,
     "Jakkur_mnow": 486,
     "Begur_mnow": 924,
@@ -107,7 +107,7 @@ const reportData = [
     "Sarjapur Road_mnow": 785
   }, total: 5682 },
   { day: "Saturday", date: "10/11/2025", stores: {
-    "Kalyan nagar": 619,
+    "Kalyan Nagar_mnow": 619,
     "Basaveshwar Nagar_mnow": 554,
     "Jakkur_mnow": 492,
     "Begur_mnow": 937,
@@ -117,7 +117,7 @@ const reportData = [
     "Sarjapur Road_mnow": 796
   }, total: 5761 },
   { day: "Sunday", date: "10/12/2025", stores: {
-    "Kalyan nagar": 639,
+    "Kalyan Nagar_mnow": 639,
     "Basaveshwar Nagar_mnow": 572,
     "Jakkur_mnow": 509,
     "Begur_mnow": 968,
@@ -127,7 +127,7 @@ const reportData = [
     "Sarjapur Road_mnow": 823
   }, total: 5952 },
   { day: "Monday", date: "10/13/2025", stores: {
-    "Kalyan nagar": 360,
+    "Kalyan Nagar_mnow": 360,
     "Basaveshwar Nagar_mnow": 322,
     "Jakkur_mnow": 286,
     "Begur_mnow": 544,
@@ -137,7 +137,7 @@ const reportData = [
     "Sarjapur Road_mnow": 463
   }, total: 3348 },
   { day: "Tuesday", date: "10/14/2025", stores: {
-    "Kalyan nagar": 448,
+    "Kalyan Nagar_mnow": 448,
     "Basaveshwar Nagar_mnow": 401,
     "Jakkur_mnow": 357,
     "Begur_mnow": 678,
@@ -147,7 +147,7 @@ const reportData = [
     "Sarjapur Road_mnow": 577
   }, total: 4171 },
   { day: "Wednesday", date: "10/15/2025", stores: {
-    "Kalyan nagar": 501,
+    "Kalyan Nagar_mnow": 501,
     "Basaveshwar Nagar_mnow": 449,
     "Jakkur_mnow": 399,
     "Begur_mnow": 759,
@@ -159,7 +159,7 @@ const reportData = [
  // 10/16/2025
 {
   day: "Thursday", date: "10/16/2025", stores: {
-    "Kalyan nagar": 587,
+    "Kalyan Nagar_mnow": 587,
     "Basaveshwar Nagar_mnow": 525,
     "Jakkur_mnow": 466,
     "Begur_mnow": 888,
@@ -172,7 +172,7 @@ const reportData = [
 // 10/17/2025
 {
   day: "Friday", date: "10/17/2025", stores: {
-    "Kalyan nagar": 734,
+    "Kalyan Nagar_mnow": 734,
     "Basaveshwar Nagar_mnow": 657,
     "Jakkur_mnow": 584,
     "Begur_mnow": 1112,
@@ -185,7 +185,7 @@ const reportData = [
 // 10/18/2025
 {
   day: "Saturday", date: "10/18/2025", stores: {
-    "Kalyan nagar": 686,
+    "Kalyan Nagar_mnow": 686,
     "Basaveshwar Nagar_mnow": 614,
     "Jakkur_mnow": 546,
     "Begur_mnow": 1039,
@@ -198,7 +198,7 @@ const reportData = [
 // 10/19/2025
 {
   day: "Sunday", date: "10/19/2025", stores: {
-    "Kalyan nagar": 677,
+    "Kalyan Nagar_mnow": 677,
     "Basaveshwar Nagar_mnow": 606,
     "Jakkur_mnow": 540,
     "Begur_mnow": 1026,
@@ -211,7 +211,7 @@ const reportData = [
 // 10/20/2025
 {
   day: "Monday", date: "10/20/2025", stores: {
-    "Kalyan nagar": 423,
+    "Kalyan Nagar_mnow": 423,
     "Basaveshwar Nagar_mnow": 378,
     "Jakkur_mnow": 336,
     "Begur_mnow": 640,
@@ -224,7 +224,7 @@ const reportData = [
 // 10/21/2025
 {
   day: "Tuesday", date: "10/21/2025", stores: {
-    "Kalyan nagar": 486,
+    "Kalyan Nagar_mnow": 486,
     "Basaveshwar Nagar_mnow": 435,
     "Jakkur_mnow": 387,
     "Begur_mnow": 736,
@@ -235,7 +235,7 @@ const reportData = [
   }, total: 4528
 },
   { day: "Wednesday", date: "10/22/2025", stores: {
-    "Kalyan nagar": 371,
+    "Kalyan Nagar_mnow": 371,
     "Basaveshwar Nagar_mnow": 332,
     "Jakkur_mnow": 295,
     "Begur_mnow": 562,
@@ -245,7 +245,7 @@ const reportData = [
     "Sarjapur Road_mnow": 478
   }, total: 3456 },
   { day: "Thursday", date: "10/23/2025", stores: {
-    "Kalyan nagar": 522,
+    "Kalyan Nagar_mnow": 522,
     "Basaveshwar Nagar_mnow": 467,
     "Jakkur_mnow": 416,
     "Begur_mnow": 791,
@@ -255,7 +255,7 @@ const reportData = [
     "Sarjapur Road_mnow": 672
   }, total: 4863 },
   { day: "Friday", date: "10/24/2025", stores: {
-    "Kalyan nagar": 508,
+    "Kalyan Nagar_mnow": 508,
     "Basaveshwar Nagar_mnow": 454,
     "Jakkur_mnow": 404,
     "Begur_mnow": 769,
@@ -265,7 +265,7 @@ const reportData = [
     "Sarjapur Road_mnow": 653
   }, total: 4727 },
   { day: "Saturday", date: "10/25/2025", stores: {
-    "Kalyan nagar": 579,
+    "Kalyan Nagar_mnow": 579,
     "Basaveshwar Nagar_mnow": 518,
     "Jakkur_mnow": 461,
     "Begur_mnow": 877,
@@ -275,7 +275,7 @@ const reportData = [
     "Sarjapur Road_mnow": 745
   }, total: 5391 },
   { day: "Sunday", date: "10/26/2025", stores: {
-    "Kalyan nagar": 535,
+    "Kalyan Nagar_mnow": 535,
     "Basaveshwar Nagar_mnow": 479,
     "Jakkur_mnow": 426,
     "Begur_mnow": 810,
@@ -285,7 +285,7 @@ const reportData = [
     "Sarjapur Road_mnow": 689
   }, total: 4982 },
   { day: "Monday", date: "10/27/2025", stores: {
-    "Kalyan nagar": 306,
+    "Kalyan Nagar_mnow": 306,
     "Basaveshwar Nagar_mnow": 274,
     "Jakkur_mnow": 243,
     "Begur_mnow": 463,
@@ -295,7 +295,7 @@ const reportData = [
     "Sarjapur Road_mnow": 393
   }, total: 2846 },
   { day: "Tuesday", date: "10/28/2025", stores: {
-    "Kalyan nagar": 366,
+    "Kalyan Nagar_mnow": 366,
     "Basaveshwar Nagar_mnow": 327,
     "Jakkur_mnow": 291,
     "Begur_mnow": 554,
@@ -305,7 +305,7 @@ const reportData = [
     "Sarjapur Road_mnow": 470
   }, total: 3404 },
   { day: "Wednesday", date: "10/29/2025", stores: {
-    "Kalyan nagar": 371,
+    "Kalyan Nagar_mnow": 371,
     "Basaveshwar Nagar_mnow": 332,
     "Jakkur_mnow": 295,
     "Begur_mnow": 562,
@@ -315,7 +315,7 @@ const reportData = [
     "Sarjapur Road_mnow": 478
   }, total: 3456 },
   { day: "Thursday", date: "10/30/2025", stores: {
-    "Kalyan nagar": 444,
+    "Kalyan Nagar_mnow": 444,
     "Basaveshwar Nagar_mnow": 397,
     "Jakkur_mnow": 353,
     "Begur_mnow": 672,
@@ -325,7 +325,7 @@ const reportData = [
     "Sarjapur Road_mnow": 571
   }, total: 4132 },
   { day: "Friday", date: "10/31/2025", stores: {
-    "Kalyan nagar": 508,
+    "Kalyan Nagar_mnow": 508,
      "Basaveshwar Nagar_mnow": 454,
     "Jakkur_mnow": 404,
     "Begur_mnow": 769,
@@ -336,7 +336,7 @@ const reportData = [
   }, total: 4727 },
 
   { day: "Saturday", date: "11/1/2025", stores: {
-    "Kalyan nagar": 619,
+    "Kalyan Nagar_mnow": 619,
     "Basaveshwar Nagar_mnow": 406,
     "Jakkur_mnow": 414,
     "Begur_mnow": 711,
@@ -347,7 +347,7 @@ const reportData = [
   }, total: 4894 },
 
   { day: "Sunday", date: "11/2/2025", stores: {
-    "Kalyan nagar": 583,
+    "Kalyan Nagar_mnow": 583,
     "Basaveshwar Nagar_mnow": 383,
     "Jakkur_mnow": 390,
     "Begur_mnow": 670,
@@ -358,7 +358,7 @@ const reportData = [
   }, total: 4613 },
 
   { day: "Monday", date: "11/3/2025", stores: {
-    "Kalyan nagar": 372,
+    "Kalyan Nagar_mnow": 372,
     "Basaveshwar Nagar_mnow": 244,
     "Jakkur_mnow": 248,
     "Begur_mnow": 427,
@@ -369,7 +369,7 @@ const reportData = [
   }, total: 2939 },
 
   { day: "Tuesday", date: "11/4/2025", stores: {
-    "Kalyan nagar": 408,
+    "Kalyan Nagar_mnow": 408,
     "Basaveshwar Nagar_mnow": 268,
     "Jakkur_mnow": 273,
     "Begur_mnow": 469,
@@ -380,7 +380,7 @@ const reportData = [
   }, total: 3229 },
 
   { day: "Wednesday", date: "11/5/2025", stores: {
-    "Kalyan nagar": 455,
+    "Kalyan Nagar_mnow": 455,
     "Basaveshwar Nagar_mnow": 299,
     "Jakkur_mnow": 304,
     "Begur_mnow": 523,
@@ -391,7 +391,7 @@ const reportData = [
   }, total: 3600 },
 
   { day: "Thursday", date: "11/6/2025", stores: {
-    "Kalyan nagar": 553,
+    "Kalyan Nagar_mnow": 553,
     "Basaveshwar Nagar_mnow": 363,
     "Jakkur_mnow": 370,
     "Begur_mnow": 635,
@@ -402,7 +402,7 @@ const reportData = [
   }, total: 4373 },
 
   { day: "Friday", date: "11/7/2025", stores: {
-    "Kalyan nagar": 591,
+    "Kalyan Nagar_mnow": 591,
     "Basaveshwar Nagar_mnow": 388,
     "Jakkur_mnow": 395,
     "Begur_mnow": 679,
@@ -413,7 +413,7 @@ const reportData = [
   }, total: 4675 },
 
   { day: "Saturday", date: "11/8/2025", stores: {
-    "Kalyan nagar": 527,
+    "Kalyan Nagar_mnow": 527,
     "Basaveshwar Nagar_mnow": 346,
     "Jakkur_mnow": 353,
     "Begur_mnow": 606,
@@ -424,7 +424,7 @@ const reportData = [
   }, total: 4171 },
 
   { day: "Sunday", date: "11/9/2025", stores: {
-    "Kalyan nagar": 573,
+    "Kalyan Nagar_mnow": 573,
     "Basaveshwar Nagar_mnow": 376,
     "Jakkur_mnow": 383,
     "Begur_mnow": 658,
@@ -435,7 +435,7 @@ const reportData = [
   }, total: 4530 },
 
   { day: "Monday", date: "11/10/2025", stores: {
-    "Kalyan nagar": 340,
+    "Kalyan Nagar_mnow": 340,
     "Basaveshwar Nagar_mnow": 223,
     "Jakkur_mnow": 227,
     "Begur_mnow": 391,
@@ -449,7 +449,7 @@ const reportData = [
     day: "Tuesday",
     date: "11/11/2025",
     stores: {
-      "Kalyan nagar": 399,
+      "Kalyan Nagar_mnow": 399,
       "Basaveshwar Nagar_mnow": 262,
       "Jakkur_mnow": 267,
       "Begur_mnow": 459,
@@ -464,7 +464,7 @@ const reportData = [
     day: "Wednesday",
     date: "11/12/2025",
     stores: {
-      "Kalyan nagar": 482,
+      "Kalyan Nagar_mnow": 482,
       "Basaveshwar Nagar_mnow": 316,
       "Jakkur_mnow": 322,
       "Begur_mnow": 554,
@@ -479,7 +479,7 @@ const reportData = [
     day: "Thursday",
     date: "11/13/2025",
     stores: {
-      "Kalyan nagar": 553,
+      "Kalyan Nagar_mnow": 553,
       "Basaveshwar Nagar_mnow": 363,
       "Jakkur_mnow": 370,
       "Begur_mnow": 635,
@@ -494,7 +494,7 @@ const reportData = [
     day: "Friday",
     date: "11/14/2025",
     stores: {
-      "Kalyan nagar": 591,
+      "Kalyan Nagar_mnow": 591,
       "Basaveshwar Nagar_mnow": 388,
       "Jakkur_mnow": 395,
       "Begur_mnow": 679,
@@ -509,7 +509,7 @@ const reportData = [
     day: "Saturday",
     date: "11/15/2025",
     stores: {
-      "Kalyan nagar": 529,
+      "Kalyan Nagar_mnow": 529,
       "Basaveshwar Nagar_mnow": 347,
       "Jakkur_mnow": 354,
       "Begur_mnow": 608,
@@ -524,7 +524,7 @@ const reportData = [
     day: "Sunday",
     date: "11/16/2025",
     stores: {
-      "Kalyan nagar": 577,
+      "Kalyan Nagar_mnow": 577,
       "Basaveshwar Nagar_mnow": 379,
       "Jakkur_mnow": 386,
       "Begur_mnow": 663,
@@ -539,7 +539,7 @@ const reportData = [
     day: "Monday",
     date: "11/17/2025",
     stores: {
-      "Kalyan nagar": 340,
+      "Kalyan Nagar_mnow": 340,
       "Basaveshwar Nagar_mnow": 223,
       "Jakkur_mnow": 227,
       "Begur_mnow": 391,
@@ -878,7 +878,7 @@ function processFile() {
         let cancelledOrders = {};
         let deepPainOrders = {};
         const includedStores = [
-            "Kalyan nagar", 
+            "Kalyan Nagar_mnow", 
             "Basaveshwar Nagar_mnow", 
             "Jakkur_mnow", 
             "Begur_mnow", 
@@ -1024,7 +1024,7 @@ processFile = function() {
         let cancelledOrders = {};
         let deepPainOrders = {};
         const includedStores = [
-            "Kalyan nagar", 
+            "Kalyan Nagar_mnow", 
             "Basaveshwar Nagar_mnow", 
             "Jakkur_mnow", 
             "Begur_mnow", 
@@ -1159,7 +1159,7 @@ processFile = function() {
         let cancelledOrders = {};
         let deepPainOrders = {};
         const includedStores = [
-            "Kalyan nagar", 
+            "Kalyan Nagar_mnow", 
             "Basaveshwar Nagar_mnow", 
             "Jakkur_mnow", 
             "Begur_mnow", 
@@ -1678,7 +1678,7 @@ document.getElementById("finalTableBtn").addEventListener("click", function () {
 
 // List of stores in the required order
 const finalStores = [
-  "Kalyan nagar ",
+  "Kalyan Nagar_mnow ",
   "Basaveshwar Nagar_mnow",
   "Jakkur_mnow",
   "Begur_mnow",
