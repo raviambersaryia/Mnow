@@ -10,12 +10,22 @@
 
     <h1>Tree Structure Builder</h1>
 
-    <div class="controls">
-        <button id="resetTree">Reset Tree</button>
+    <div class="controls no-export">
+        <button id="resetTree">Reset</button>
+        <button id="downloadPDF" class="pdf-btn">Download PDF</button>
     </div>
 
     <div id="treeContainer"></div>
 
+<!-- html2canvas CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<!-- jsPDF CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    
     <script src="tree.js"></script>
+    
+
 </body>
 </html>
