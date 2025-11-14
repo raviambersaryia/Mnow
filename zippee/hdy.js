@@ -1156,7 +1156,7 @@ document.getElementById("finalTableBtn").addEventListener("click", function () {
         <th>Deep Pain (Order Count)</th>
         <th>Additional Orders</th>
         <th class="hide-corrected-deep-pain">Corrected DeepPain</th>
-        <th>Actual Deep_Pain</th>
+        <th>®Actual Deep_Pain</th>
     </tr></thead><tbody>`;
 
     // 5. Merge rows by store name
@@ -1541,4 +1541,5 @@ function excelDateToJSDate(serial) {
 function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
+
 }
