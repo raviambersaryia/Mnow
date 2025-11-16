@@ -257,12 +257,12 @@
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td>Kalyan nagar</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Kalyan Nagar_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Basaweshwar Nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Jakkur Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Jakkur_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Begur Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Thyagaraja Nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Brookfield Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Thyagaraja Nagar_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Brookfield_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>JP nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Sarjapur road Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Manikonda Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
@@ -286,6 +286,19 @@
   </div>
 
   <button id="shareButton">📸 Share Screenshot</button>
+  <button id="resetButton" style="
+  display:block; 
+  margin:20px auto; 
+  padding:10px 24px; 
+  font-size:1.1rem; 
+  background:#b30000;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;">
+  ♻ Reset All Data
+</button>
+
 
   <div id="socialSharePopup" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.5); z-index:9999; align-items:center; justify-content:center;">
     <div style="background:#fff; padding:30px 40px; border-radius:16px; text-align:center; position:relative;">
@@ -479,6 +492,82 @@
         });
       });
     });
+
+
+    // reset button 
+    /* -------------------------------
+   SAVE TABLE DATA TO LOCALSTORAGE
+--------------------------------*/
+function saveToLocal() {
+  const rows = document.querySelectorAll('#tableBody tr');
+  let data = [];
+
+  rows.forEach(row => {
+    const inputs = row.querySelectorAll('input');
+    data.push({
+      active: inputs[0].value,
+      idle: inputs[1].value,
+      pending: inputs[2].value,
+      bf: inputs[3].value
+    });
+  });
+
+  localStorage.setItem("riderDataBF", JSON.stringify(data));
+}
+
+/* -------------------------------
+   LOAD DATA FROM LOCALSTORAGE
+--------------------------------*/
+function loadFromLocal() {
+  const saved = localStorage.getItem("riderDataBF");
+  if (!saved) return;
+
+  const data = JSON.parse(saved);
+  const rows = document.querySelectorAll('#tableBody tr');
+
+  rows.forEach((row, i) => {
+    const inputs = row.querySelectorAll('input');
+    if (data[i]) {
+      inputs[0].value = data[i].active || "";
+      inputs[1].value = data[i].idle || "";
+      inputs[2].value = data[i].pending || "";
+      inputs[3].value = data[i].bf || "";
+    }
+  });
+
+  updateTable();
+}
+
+/* -------------------------------
+   CALL SAVE AFTER EVERY INPUT
+--------------------------------*/
+inputs.forEach(input => {
+  input.addEventListener("input", () => {
+    saveToLocal();
+  });
+});
+
+/* -------------------------------
+   RESET BUTTON (CLEAR ALL DATA)
+--------------------------------*/
+document.getElementById("resetButton").addEventListener("click", () => {
+  if (confirm("Are you sure you want to clear all data?")) {
+    localStorage.removeItem("riderDataBF");
+
+    const rows = document.querySelectorAll('#tableBody tr');
+    rows.forEach(row => {
+      row.querySelectorAll('input').forEach(input => input.value = "");
+    });
+
+    updateTable();
+  }
+});
+
+/* -------------------------------
+   LOAD DATA WHEN PAGE OPENS
+--------------------------------*/
+window.onload = loadFromLocal;
+
   </script>
 </body>
 </html>
