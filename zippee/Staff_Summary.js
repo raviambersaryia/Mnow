@@ -89,3 +89,82 @@ document.getElementById("shareBtn").addEventListener("click", async () => {
     console.error("Share failed:", err);
   }
 });
+/* ======================================================
+   LOCAL STORAGE — SAVE, LOAD & RESET  (ONLY LOGIC ADDED)
+========================================================= */
+
+// 🔹 Save all table data to LocalStorage
+function saveStaffData() {
+  const rows = document.querySelectorAll("#staffTable tbody tr");
+  let savedData = [];
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td[contenteditable]");
+    let rowData = [];
+
+    cells.forEach(cell => {
+      rowData.push(cell.textContent.trim());
+    });
+
+    savedData.push(rowData);
+  });
+
+  localStorage.setItem("staffSummaryData", JSON.stringify(savedData));
+}
+
+
+// 🔹 Load previously saved data
+function loadStaffData() {
+  const saved = localStorage.getItem("staffSummaryData");
+  if (!saved) return;
+
+  const savedRows = JSON.parse(saved);
+  const rows = document.querySelectorAll("#staffTable tbody tr");
+
+  rows.forEach((row, i) => {
+    const cells = row.querySelectorAll("td[contenteditable]");
+    if (savedRows[i]) {
+      cells.forEach((cell, j) => {
+        cell.textContent = savedRows[i][j] || "";
+      });
+    }
+  });
+
+  calculateTotals(); // Recalculate totals after loading
+}
+
+
+// 🔹 Save after every user edit
+document.querySelectorAll("#staffTable td[contenteditable]").forEach(cell => {
+  cell.addEventListener("input", () => {
+    saveStaffData();
+    calculateTotals();
+  });
+});
+
+
+// 🔹 RESET BUTTON (clear everything)
+function resetStaffData() {
+  if (confirm("Are you sure you want to clear all data?")) {
+    localStorage.removeItem("staffSummaryData");
+
+    document.querySelectorAll("#staffTable td[contenteditable]").forEach(cell => {
+      cell.textContent = "";
+    });
+
+    calculateTotals();
+  }
+}
+
+
+// 👉 You must add this button in HTML:
+/*
+<button onclick="resetStaffData()" 
+style="margin:15px; padding:10px 20px; font-weight:bold; background:#b30000; color:#fff; border:none; border-radius:6px; cursor:pointer;">
+  RESET DATA
+</button>
+*/
+
+// Load saved data on page load
+window.addEventListener("load", loadStaffData);
+
