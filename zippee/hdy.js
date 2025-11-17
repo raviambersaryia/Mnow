@@ -316,7 +316,7 @@ const reportData = [
       "Nizampet_mnow": 195
     },
     total: 946
-  }
+  },
 
 ];
 
@@ -1543,3 +1543,4 @@ function formatDate(dt) {
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 
 }
+
