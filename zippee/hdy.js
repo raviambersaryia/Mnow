@@ -79,11 +79,11 @@ const reportData = [
     "Nizampet_mnow": 237
   }, total: 1323 },
 { day: "Friday", date: "10/17/2025", stores: {
-    "Manikonda_mnow": 396,
-    "Gachibowli_mnow": 625,
-    "Attapur_mnow": 336,
-    "Nizampet_mnow": 295
-  }, total: 1652 },
+    "Manikonda_mnow": 228,
+    "Gachibowli_mnow": 372,
+    "Attapur_mnow":151 ,
+    "Nizampet_mnow": 195
+  }, total: 946 },
 { day: "Saturday", date: "10/18/2025", stores: {
     "Manikonda_mnow": 371,
     "Gachibowli_mnow": 584,
@@ -1159,7 +1159,7 @@ document.getElementById("finalTableBtn").addEventListener("click", function () {
         <th>®Actual Deep_Pain</th>
     </tr></thead><tbody>`;
 
-    // 5. Merge rows by store name
+    // 5. Merge rows by Store Name
     const allStores = Array.from(new Set([...Object.keys(projectionData), ...Object.keys(summaryData)]));
     let deepPainOrderCounts = [];
     let additionalOrdersList = [];
@@ -1407,12 +1407,12 @@ document.getElementById("finalTableBtn").addEventListener("click", function () {
 
 // List of stores in the required order
 const finalStores = [
-  "Kalyan nagar ",
+  "Kalyan Nagar_mnow ",
   "Basaweshwar Nagar Mnow",
   "Jakkur_mnow",
   "Begur_mnow",
-  "Thyagaraja Nagar Mnow",
-  "Brookfield Mnow",
+  "Thyagaraja Nagar_mnow",
+  "Brookfield_mnow",
   "JP nagar_mnow",
   "Sarjapur Road_mnow"
 ];
@@ -1433,7 +1433,7 @@ function attemptedOrdersPercent(totalOrders, projectedOrders) {
 
 // Helper to get the correct Projected Orders for Order Attainment calculation
 function getProjectedOrdersForAttempted(store) {
-  // Use the Projected Orders | till 9-10 AM column (second column after store name)
+  // Use the Projected Orders | till 9-10 AM column (second column after Store Name)
   const projectionTable = document.getElementById("reportTable");
   if (!projectionTable) return 0;
   const rows = projectionTable.querySelectorAll("tbody tr");
@@ -1509,7 +1509,7 @@ handleHashChange();
 // Bind hash change to window event
 window.addEventListener('hashchange', handleHashChange);
 
-// Normalize store names for consistent display
+// Normalize Store Names for consistent display
 function normalizeStoreName(name) {
   if (!name) return '';
   let n = name.trim().toLowerCase();
@@ -1541,5 +1541,4 @@ function excelDateToJSDate(serial) {
 function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
-
 }
