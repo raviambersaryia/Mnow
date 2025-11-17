@@ -539,16 +539,16 @@ const reportData = [
     day: "Monday",
     date: "11/17/2025",
     stores: {
-      "Kalyan Nagar_mnow": 340,
-      "Basaveshwar Nagar_mnow": 223,
-      "Jakkur_mnow": 227,
-      "Begur_mnow": 391,
-      "Thyagaraja Nagar_mnow": 294,
-      "Brookfield_mnow": 577,
-      "JP nagar_mnow": 312,
-      "Sarjapur Road_mnow": 325
+      "Kalyan Nagar_mnow":423 ,
+      "Basaveshwar Nagar_mnow": 278,
+      "Jakkur_mnow":283 ,
+      "Begur_mnow":486 ,
+      "Thyagaraja Nagar_mnow": 366,
+      "Brookfield_mnow":717 ,
+      "JP nagar_mnow":389 ,
+      "Sarjapur Road_mnow": 404
     },
-    total: 2689
+    total: 3346
   }
 ]
 
@@ -1426,7 +1426,7 @@ document.getElementById("finalTableBtn").addEventListener("click", function () {
         <th>®Actual Deep_Pain</th>
     </tr></thead><tbody>`;
 
-    // 5. Merge rows by store name
+    // 5. Merge rows by Store Name
     const allStores = Array.from(new Set([...Object.keys(projectionData), ...Object.keys(summaryData)]));
     let deepPainOrderCounts = [];
     let additionalOrdersList = [];
@@ -1704,7 +1704,7 @@ function attemptedOrdersPercent(totalOrders, projectedOrders) {
 
 // Helper to get the correct Projected Orders for Order Attainment calculation
 function getProjectedOrdersForAttempted(store) {
-  // Use the Projected Orders | till 9-10 AM column (second column after store name)
+  // Use the Projected Orders | till 9-10 AM column (second column after Store Name)
   const projectionTable = document.getElementById("reportTable");
   if (!projectionTable) return 0;
   const rows = projectionTable.querySelectorAll("tbody tr");
@@ -1780,7 +1780,7 @@ handleHashChange();
 // Bind hash change to window event
 window.addEventListener('hashchange', handleHashChange);
 
-// Normalize store names for consistent display
+// Normalize Store Names for consistent display
 function normalizeStoreName(name) {
   if (!name) return '';
   let n = name.trim().toLowerCase();
@@ -1813,4 +1813,3 @@ function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 }
-
