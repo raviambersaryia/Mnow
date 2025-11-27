@@ -49,18 +49,19 @@ document.getElementById('riderSubmitBtn').addEventListener('click', () => {
 
     // Only keep the 8 required stores
     const allowedStores = [
-      'Basaweshwar Nagar Mnow',
-      'Begur Mnow',
-      'JP nagar Mnow',
-      'Kalyan nagar',
-      'Brookfield Mnow',
-      'Sarjapur road Mnow',
-      'Jakkur Mnow',
-      'Thyagaraja Nagar Mnow',
-      'Manikonda Mnow',
-      'Gachibowli Mnow',
-      'Attapur Mnow',
-      'Nizampet Mnow'
+      'Kalyan Nagar_mnow',  
+      'Basaveshwar Nagar_mnow',
+      'Jakkur_mnow',
+      'Begur_mnow',
+      'Thyagaraja Nagar_mnow',
+      'Brookfield_mnow',
+      'JP nagar_mnow',
+      'Brookfield_mnow',
+      'Sarjapur Road_mnow',
+      'Manikonda_mnow',
+      'Gachibowli_mnow',
+      'Attapur_mnow',
+      'Nizampet_mnow'
 
     ];
     const i=0;
