@@ -44,6 +44,7 @@
     font-size: 1.15rem;
     vertical-align: middle;
     word-break: break-word;
+    width: 90px;
   }
 
   thead th {
@@ -65,6 +66,7 @@
     white-space: normal;
     overflow: visible;
     text-overflow: unset;
+    width: 180px;
 }
 
   input {
@@ -186,6 +188,7 @@
   #tableBody td{
     width: 100%;
   }
+  
   </style>
 </head>
 <body>
@@ -257,7 +260,7 @@
         </tr>
       </thead>
       <tbody id="tableBody">
-        <tr><td>Kalyan Nagar_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td class="storeSize">Kalyan Nagar_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Basaweshwar Nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Jakkur_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Begur Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
@@ -265,10 +268,10 @@
         <tr><td>Brookfield_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>JP nagar Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
         <tr><td>Sarjapur road Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Manikonda Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Gachibowli Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Attapur Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
-        <tr><td>Nizampet Mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Manikonda_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Gachibowli_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Attapur_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
+        <tr><td>Nizampet_mnow</td><td><input></td><td><input></td><td><input></td><td><input class="bf"></td></tr>
 
       </tbody>
       <tfoot>
@@ -389,8 +392,8 @@
 
         if (!isNaN(bf)) {
           bfValues.push(bf);
-          if (bf <= 1.2) bfInput.classList.add("green");
-          else if (bf <= 1.5) bfInput.classList.add("yellow");
+          if (bf <= 1.6) bfInput.classList.add("green");
+          else if (bf   >= 1.5 || bf<=2.2) bfInput.classList.add("yellow");
           else bfInput.classList.add("red");
         }
       });
