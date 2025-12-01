@@ -460,6 +460,17 @@ const reportData = [
     },
     total: 1496
   },
+     {
+    day: "Monday",
+    date: "12/1/2025",
+    stores: {
+      "Manikonda_mnow": 169,
+      "Gachibowli_mnow": 273,
+      "Attapur_mnow": 110,
+      "Nizampet_mnow": 151
+    },
+    total: 703
+  },
   {
     day: "Tuesday",
     date: "12/2/2025",
@@ -1767,4 +1778,5 @@ function excelDateToJSDate(serial) {
 function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
+
 }
