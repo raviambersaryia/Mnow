@@ -460,16 +460,16 @@ const reportData = [
     },
     total: 1496
   },
-     {
+   {
     day: "Monday",
     date: "12/1/2025",
     stores: {
-      "Manikonda_mnow": 169,
-      "Gachibowli_mnow": 273,
-      "Attapur_mnow": 110,
-      "Nizampet_mnow": 151
+      "Manikonda_mnow": 157,
+      "Gachibowli_mnow": 254,
+      "Attapur_mnow": 127,
+      "Nizampet_mnow": 146
     },
-    total: 703
+    total: 684
   },
   {
     day: "Tuesday",
@@ -482,79 +482,139 @@ const reportData = [
     },
     total: 795
   },
-
   {
     day: "Wednesday",
     date: "12/3/2025",
     stores: {
-      "Manikonda_mnow": 214,
-      "Gachibowli_mnow": 346,
-      "Attapur_mnow": 139,
+      "Manikonda_mnow": 215,
+      "Gachibowli_mnow": 357,
+      "Attapur_mnow": 157,
       "Nizampet_mnow": 192
     },
-    total: 891
+    total: 921
   },
-
   {
     day: "Thursday",
     date: "12/4/2025",
     stores: {
-      "Manikonda_mnow": 211,
-      "Gachibowli_mnow": 341,
-      "Attapur_mnow": 137,
-      "Nizampet_mnow": 189
+      "Manikonda_mnow": 369,
+      "Gachibowli_mnow": 593,
+      "Attapur_mnow": 247,
+      "Nizampet_mnow": 351
     },
-    total: 878
+    total: 1560
   },
-
   {
     day: "Friday",
     date: "12/5/2025",
     stores: {
-      "Manikonda_mnow": 556,
-      "Gachibowli_mnow": 898,
-      "Attapur_mnow": 361,
-      "Nizampet_mnow": 498
+      "Manikonda_mnow": 513,
+      "Gachibowli_mnow": 795,
+      "Attapur_mnow": 325,
+      "Nizampet_mnow": 417
     },
-    total: 2313
+    total: 2050
   },
-
   {
     day: "Saturday",
     date: "12/6/2025",
     stores: {
-      "Manikonda_mnow": 490,
-      "Gachibowli_mnow": 791,
-      "Attapur_mnow": 318,
-      "Nizampet_mnow": 439
+      "Manikonda_mnow": 382,
+      "Gachibowli_mnow": 611,
+      "Attapur_mnow": 253,
+      "Nizampet_mnow": 326
     },
-    total: 2038
+    total: 1572
   },
-
   {
     day: "Sunday",
     date: "12/7/2025",
     stores: {
-      "Manikonda_mnow": 434,
-      "Gachibowli_mnow": 700,
-      "Attapur_mnow": 281,
-      "Nizampet_mnow": 388
+      "Manikonda_mnow": 369,
+      "Gachibowli_mnow": 663,
+      "Attapur_mnow": 261,
+      "Nizampet_mnow": 316
     },
-    total: 1803
+    total: 1609
   },
-
   {
     day: "Monday",
     date: "12/8/2025",
     stores: {
-      "Manikonda_mnow": 300,
-      "Gachibowli_mnow": 485,
-      "Attapur_mnow": 195,
-      "Nizampet_mnow": 269
+      "Manikonda_mnow": 241,
+      "Gachibowli_mnow": 390,
+      "Attapur_mnow": 196,
+      "Nizampet_mnow": 225
     },
-    total: 1249
+    total: 1052
+  },
+  {
+    day: "Tuesday",
+    date: "12/9/2025",
+    stores: {
+      "Manikonda_mnow": 281,
+      "Gachibowli_mnow": 463,
+      "Attapur_mnow": 200,
+      "Nizampet_mnow": 254
+    },
+    total: 1198
+  },
+  {
+    day: "Wednesday",
+    date: "12/10/2025",
+    stores: {
+      "Manikonda_mnow": 310,
+      "Gachibowli_mnow": 515,
+      "Attapur_mnow": 225,
+      "Nizampet_mnow": 277
+    },
+    total: 1327
+  },
+  {
+    day: "Thursday",
+    date: "12/11/2025",
+    stores: {
+      "Manikonda_mnow": 296,
+      "Gachibowli_mnow": 476,
+      "Attapur_mnow": 199,
+      "Nizampet_mnow": 282
+    },
+    total: 1253
+  },
+  {
+    day: "Friday",
+    date: "12/12/2025",
+    stores: {
+      "Manikonda_mnow": 328,
+      "Gachibowli_mnow": 508,
+      "Attapur_mnow": 208,
+      "Nizampet_mnow": 266
+    },
+    total: 1310
+  },
+  {
+    day: "Saturday",
+    date: "12/13/2025",
+    stores: {
+      "Manikonda_mnow": 300,
+      "Gachibowli_mnow": 480,
+      "Attapur_mnow": 199,
+      "Nizampet_mnow": 257
+    },
+    total: 1236
+  },
+  {
+    day: "Sunday",
+    date: "12/14/2025",
+    stores: {
+      "Manikonda_mnow": 287,
+      "Gachibowli_mnow": 517,
+      "Attapur_mnow": 203,
+      "Nizampet_mnow": 246
+    },
+    total: 1253
   }
-
+  
 ];
 
 
@@ -1778,6 +1838,4 @@ function excelDateToJSDate(serial) {
 function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
-
 }
-
