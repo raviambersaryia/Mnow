@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rider Login Time Report</title>
+  <link rel="stylesheet" href="syle.css">
+</head>
+<style>
+  body {
+  font-family: Arial;
+  background: #f4f6f8;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input, button {
+  padding: 8px;
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #007BFF;
+  color: white;
+}
+
+</style>
+<body>
+
+<h2>Riders Worker Time Report</h2>
+
+<input type="file" id="fileInput" accept=".csv,.xlsx,.xls">
+<button id="submitBtn">Upload File</button>
+
+<br><br>
+
+<input type="text" id="searchBox" placeholder="Search Worker Name...">
+
+<br><br>
+
+<button id="downloadBtn">Download Report</button>
+
+<table id="dataTable">
+  <thead>
+    <tr>
+      <th>Hub Name</th>
+      <th>Worker Name</th>
+      <th>Work Date</th>
+      <th>Check-in</th>
+      <th>Check-out</th>
+      <th>Working Hours</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="riderwork_1.js"></script>
+
+</body>
+</html>
