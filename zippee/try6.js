@@ -1067,7 +1067,7 @@ const reportData = [
       "Kalyan Nagar_mnow": 735,
       "Basaveshwar Nagar_mnow": 473,
       "Jakkur_mnow": 446,
-      "Begur_mnow": 730,
+      "Begur_mnow": 794,
       "Thyagaraja Nagar_mnow": 544,
       "Brookfield_mnow": 1256,
       "JP nagar_mnow": 641,
@@ -1082,7 +1082,7 @@ const reportData = [
       "Kalyan Nagar_mnow": 799,
       "Basaveshwar Nagar_mnow": 556,
       "Jakkur_mnow": 445,
-      "Begur_mnow": 802,
+      "Begur_mnow": 943,
       "Thyagaraja Nagar_mnow": 665,
       "Brookfield_mnow": 1474,
       "JP nagar_mnow": 661,
@@ -1097,7 +1097,7 @@ const reportData = [
       "Kalyan Nagar_mnow": 669,
       "Basaveshwar Nagar_mnow": 485,
       "Jakkur_mnow": 462,
-      "Begur_mnow": 732,
+      "Begur_mnow": 862,
       "Thyagaraja Nagar_mnow": 561,
       "Brookfield_mnow": 1246,
       "JP nagar_mnow": 623,
@@ -1112,7 +1112,7 @@ const reportData = [
       "Kalyan Nagar_mnow": 533,
       "Basaveshwar Nagar_mnow": 352,
       "Jakkur_mnow": 344,
-      "Begur_mnow": 557,
+      "Begur_mnow": 656,
       "Thyagaraja Nagar_mnow": 384,
       "Brookfield_mnow": 923,
       "JP nagar_mnow": 450,
@@ -1127,7 +1127,7 @@ const reportData = [
       "Kalyan Nagar_mnow": 558,
       "Basaveshwar Nagar_mnow": 402,
       "Jakkur_mnow": 365,
-      "Begur_mnow": 560,
+      "Begur_mnow": 708,
       "Thyagaraja Nagar_mnow": 423,
       "Brookfield_mnow": 980,
       "JP nagar_mnow": 485,
@@ -2444,4 +2444,5 @@ function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 }
+
 
