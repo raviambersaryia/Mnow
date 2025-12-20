@@ -1202,14 +1202,14 @@ const reportData = [
     stores: {
       "Kalyan Nagar_mnow": 618,
       "Basaveshwar Nagar_mnow": 448,
-      "Jakkur_mnow": 427,
+      "Jakkur_mnow": 472,
       "Begur_mnow": 917,
-      "Thyagaraja Nagar_mnow": 520,
+      "Thyagaraja Nagar_mnow": 575,
       "Brookfield_mnow": 1153,
       "JP nagar_mnow": 577,
       "Sarjapur Road_mnow": 599
     },
-    total: 5259
+    total: 5359
   },
   {
     day: "Monday",
@@ -2625,3 +2625,4 @@ function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 }
+
