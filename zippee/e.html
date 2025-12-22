@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rider Incentive Management</title>
+
+<style>
+*{box-sizing:border-box}
+body{
+  font-family: Arial, sans-serif;
+  background:#f4f6f8;
+  margin:0;
+  padding:10px;
+}
+h2{text-align:center;margin:8px 0}
+
+.container{
+  max-width:1200px;
+  margin:auto;
+}
+
+.section{
+  background:#fff;
+  border-radius:6px;
+  padding:8px;
+  margin-bottom:8px;
+}
+
+.section-title{
+  background:#d9ead3;
+  padding:6px;
+  font-weight:bold;
+  border-radius:4px;
+  margin-bottom:6px;
+  font-size:14px;
+}
+
+.table-wrap{
+  overflow-x:auto;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:13px;
+}
+
+th,td{
+  border:1px solid #ccc;
+  padding:4px;
+  text-align:center;
+}
+
+th{background:#ffe599}
+
+input{
+  width:100%;
+  border:none;
+  text-align:center;
+}
+
+.controls{
+  text-align:right;
+  margin-top:4px;
+}
+
+button{
+  padding:5px 10px;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:12px;
+}
+
+.add{background:#4CAF50;color:#fff}
+.save{background:#2196F3;color:#fff}
+.reset{background:#f44336;color:#fff}
+
+.footer-buttons{
+  text-align:center;
+  margin-top:8px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h2>Rider Incentive Management</h2>
+
+<!-- ================= DATA ONLY (EDIT HERE) ================= -->
+<script>
+const TABLES = {
+  table1:{
+    title:"Incentive Conditions",
+    headers:["Condition"],
+    rows:[
+      ["Peak Hour Login: Minimum 5 hours"],
+      ["Daily Login: Minimum 10 hours"],
+      ["Weekly Login: Minimum 6 days"],
+      ["FSS Mandate Compliance"],
+      ["Max 12 rejections per week"]
+    ]
+  },
+
+  table2:{
+    title:"Base Pay",
+    headers:["Type","Amount"],
+    rows:[
+      ["Base Pay","30"]
+    ]
+  },
+
+  table3:{
+    title:"Distance Pay",
+    headers:["KM Range","Pay"],
+    rows:[
+      ["0-1","6"],["1-2","12"],["2-3","18"],
+      ["3-4","24"],["4-5","32"],["5-6","40"]
+    ]
+  },
+
+  table4:{
+    title:"EBO",
+    headers:["Orders","Base","Incentive","Total"],
+    rows:[
+      ["5","270","90","360"],
+      ["10","540","180","720"],
+      ["15","810","270","1080"]
+    ]
+  },
+
+  table5:{
+    title:"Weekly Incentives",
+    headers:["Orders","Store","Incentive"],
+    rows:[
+      ["48-62","Attapur+Nizampet","400"],
+      ["63-79","Attapur+Nizampet","800"]
+    ]
+  },
+
+  table6:{
+    title:"Rain / RTO Incentive",
+    headers:["Level","Amount"],
+    rows:[
+      ["L","10"],["M","15"],["H","20"]
+    ]
+  }
+};
+</script>
+<!-- ======================================================== -->
+
+<div id="tables"></div>
+
+<div class="footer-buttons">
+  <button class="save" onclick="saveAll()">Save</button>
+  <button class="reset" onclick="resetAll()">Reset</button>
+</div>
+
+</div>
+
+<script>
+function createTables(){
+  const wrap=document.getElementById("tables");
+  wrap.innerHTML="";
+
+  Object.keys(TABLES).forEach(id=>{
+    const t=TABLES[id];
+    const sec=document.createElement("div");
+    sec.className="section";
+
+    sec.innerHTML=`
+      <div class="section-title">${t.title}</div>
+      <div class="table-wrap">
+        <table id="${id}">
+          <tr>${t.headers.map(h=>`<th>${h}</th>`).join("")}</tr>
+        </table>
+      </div>
+      <div class="controls">
+        <button class="add" onclick="addRow('${id}')">Add Row</button>
+      </div>
+    `;
+    wrap.appendChild(sec);
+
+    loadRows(id);
+  });
+}
+
+function loadRows(id){
+  const table=document.getElementById(id);
+  const saved=JSON.parse(localStorage.getItem(id)) || TABLES[id].rows;
+
+  saved.forEach(r=>{
+    const row=table.insertRow();
+    r.forEach(v=>{
+      row.insertCell().innerHTML=`<input value="${v}">`;
+    });
+  });
+}
+
+function addRow(id){
+  const table=document.getElementById(id);
+  const cols=table.rows[0].cells.length;
+  const row=table.insertRow();
+  for(let i=0;i<cols;i++){
+    row.insertCell().innerHTML="<input>";
+  }
+}
+
+function saveAll(){
+  document.querySelectorAll("table").forEach(t=>{
+    const data=[];
+    for(let r=1;r<t.rows.length;r++){
+      const row=[];
+      for(let c=0;c<t.rows[r].cells.length;c++){
+        row.push(t.rows[r].cells[c].querySelector("input").value);
+      }
+      data.push(row);
+    }
+    localStorage.setItem(t.id,JSON.stringify(data));
+  });
+  alert("Data Saved");
+}
+
+function resetAll(){
+  if(confirm("Clear all data?")){
+    localStorage.clear();
+    location.reload();
+  }
+}
+
+createTables();
+</script>
+</body>
+</html>
