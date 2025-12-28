@@ -713,94 +713,94 @@ const reportData = [
   },
   total: 894
 },
-{
-  day: "Wednesday",
-  date: "12/24/2025",
-  stores: {
-    Manikonda_mnow: 350,
-    Gachibowli_mnow: 478,
-    Attapur_mnow: 224,
-    Nizampet_mnow: 277
+  {
+    day: "Wednesday",
+    date: "12/24/2025",
+    stores: {
+      Manikonda_mnow: 350,
+      Gachibowli_mnow: 478,
+      Attapur_mnow: 224,
+      Nizampet_mnow: 277
+    },
+    total: 1329
   },
-  total: 1329
-},
-{
-  day: "Thursday",
-  date: "12/25/2025",
-  stores: {
-    Manikonda_mnow: 295,
-    Gachibowli_mnow: 395,
-    Attapur_mnow: 174,
-    Nizampet_mnow: 249
+  {
+    day: "Thursday",
+    date: "12/25/2025",
+    stores: {
+      Manikonda_mnow: 365,
+      Gachibowli_mnow: 482,
+      Attapur_mnow: 215,
+      Nizampet_mnow: 308
+    },
+    total: 1370
   },
-  total: 1113
-},
-{
-  day: "Friday",
-  date: "12/26/2025",
-  stores: {
-    Manikonda_mnow: 362,
-    Gachibowli_mnow: 466,
-    Attapur_mnow: 201,
-    Nizampet_mnow: 259
+  {
+    day: "Friday",
+    date: "12/26/2025",
+    stores: {
+      Manikonda_mnow: 447,
+      Gachibowli_mnow: 568,
+      Attapur_mnow: 248,
+      Nizampet_mnow: 321
+    },
+    total: 1584
   },
-  total: 1288
-},
-{
-  day: "Saturday",
-  date: "12/27/2025",
-  stores: {
-    Manikonda_mnow: 322,
-    Gachibowli_mnow: 428,
-    Attapur_mnow: 187,
-    Nizampet_mnow: 243
+  {
+    day: "Saturday",
+    date: "12/27/2025",
+    stores: {
+      Manikonda_mnow: 398,
+      Gachibowli_mnow: 523,
+      Attapur_mnow: 231,
+      Nizampet_mnow: 301
+    },
+    total: 1453
   },
-  total: 1180
-},
-{
-  day: "Sunday",
-  date: "12/28/2025",
-  stores: {
-    Manikonda_mnow: 282,
-    Gachibowli_mnow: 424,
-    Attapur_mnow: 177,
-    Nizampet_mnow: 215
+  {
+    day: "Sunday",
+    date: "12/28/2025",
+    stores: {
+      Manikonda_mnow: 349,
+      Gachibowli_mnow: 517,
+      Attapur_mnow: 218,
+      Nizampet_mnow: 266
+    },
+    total: 1350
   },
-  total: 1098
-},
-{
-  day: "Monday",
-  date: "12/29/2025",
-  stores: {
-    Manikonda_mnow: 237,
-    Gachibowli_mnow: 316,
-    Attapur_mnow: 169,
-    Nizampet_mnow: 195
+  {
+    day: "Monday",
+    date: "12/29/2025",
+    stores: {
+      Manikonda_mnow: 293,
+      Gachibowli_mnow: 386,
+      Attapur_mnow: 208,
+      Nizampet_mnow: 241
+    },
+    total: 1128
   },
-  total: 917
-},
-{
-  day: "Tuesday",
-  date: "12/30/2025",
-  stores: {
-    Manikonda_mnow: 270,
-    Gachibowli_mnow: 371,
-    Attapur_mnow: 169,
-    Nizampet_mnow: 217
+  {
+    day: "Tuesday",
+    date: "12/30/2025",
+    stores: {
+      Manikonda_mnow: 333,
+      Gachibowli_mnow: 452,
+      Attapur_mnow: 208,
+      Nizampet_mnow: 268
+    },
+    total: 1261
   },
-  total: 1027
-},
-{
-  day: "Wednesday",
-  date: "12/31/2025",
-  stores: {
-    Manikonda_mnow: 300,
-    Gachibowli_mnow: 415,
-    Attapur_mnow: 193,
-    Nizampet_mnow: 238
-  },
-  total: 1146
-}
+  {
+    day: "Wednesday",
+    date: "12/31/2025",
+    stores: {
+      Manikonda_mnow: 371,
+      Gachibowli_mnow: 506,
+      Attapur_mnow: 238,
+      Nizampet_mnow: 294
+    },
+    total: 1409
+  }
   
 ];
 
@@ -2025,5 +2025,4 @@ function excelDateToJSDate(serial) {
 function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
-
 }
