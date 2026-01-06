@@ -860,35 +860,91 @@ const reportData = [
     day: "Tuesday",
     date: "1/6/2026",
     stores: {
-      Manikonda_mnow: 291,
-      Gachibowli_mnow: 493,
-      Attapur_mnow: 208,
-      Nizampet_mnow: 271
+      Manikonda_mnow: 287,
+      Gachibowli_mnow: 485,
+      Attapur_mnow: 205,
+      Nizampet_mnow: 266
     },
-    total: 1263
+    total: 1243
   },
   {
     day: "Wednesday",
     date: "1/7/2026",
     stores: {
-      Manikonda_mnow: 238,
-      Gachibowli_mnow: 390,
-      Attapur_mnow: 185,
-      Nizampet_mnow: 200
+      Manikonda_mnow: 244,
+      Gachibowli_mnow: 398,
+      Attapur_mnow: 189,
+      Nizampet_mnow: 204
     },
-    total: 1013
+    total: 1035
   },
   {
     day: "Thursday",
     date: "1/8/2026",
     stores: {
       Manikonda_mnow: 249,
-      Gachibowli_mnow: 423,
-      Attapur_mnow: 164,
+      Gachibowli_mnow: 424,
+      Attapur_mnow: 165,
       Nizampet_mnow: 224
     },
-    total: 1060
+    total: 1062
+  },
+  {
+    day: "Friday",
+    date: "1/9/2026",
+    stores: {
+      Manikonda_mnow: 414,
+      Gachibowli_mnow: 691,
+      Attapur_mnow: 267,
+      Nizampet_mnow: 348
+    },
+    total: 1720
+  },
+  {
+    day: "Saturday",
+    date: "1/10/2026",
+    stores: {
+      Manikonda_mnow: 389,
+      Gachibowli_mnow: 619,
+      Attapur_mnow: 226,
+      Nizampet_mnow: 314
+    },
+    total: 1548
+  },
+  {
+    day: "Sunday",
+    date: "1/11/2026",
+    stores: {
+      Manikonda_mnow: 340,
+      Gachibowli_mnow: 601,
+      Attapur_mnow: 240,
+      Nizampet_mnow: 282
+    },
+    total: 1463
+  },
+  {
+    day: "Monday",
+    date: "1/12/2026",
+    stores: {
+      Manikonda_mnow: 257,
+      Gachibowli_mnow: 364,
+      Attapur_mnow: 170,
+      Nizampet_mnow: 197
+    },
+    total: 988
+  },
+  {
+    day: "Tuesday",
+    date: "1/13/2026",
+    stores: {
+      Manikonda_mnow: 317,
+      Gachibowli_mnow: 537,
+      Attapur_mnow: 227,
+      Nizampet_mnow: 295
+    },
+    total: 1376
   }
+
   
 ];
 
