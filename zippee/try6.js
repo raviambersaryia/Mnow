@@ -1455,16 +1455,16 @@ const reportData = [
     day: "Wednesday",
     date: "1/7/2026",
     stores: {
-      "Kalyan Nagar_mnow": 490,
-      "Basaveshwar Nagar_mnow": 330,
-      "Jakkur_mnow": 283,
-      "Begur_mnow": 764,
-      "Thyagaraja Nagar_mnow": 400,
-      "Brookfield_mnow": 925,
-      "JP nagar_mnow": 447,
-      "Sarjapur Road_mnow": 402
+      "Kalyan Nagar_mnow": 406,
+      "Basaveshwar Nagar_mnow": 290,
+      "Jakkur_mnow": 235,
+      "Begur_mnow": 633,
+      "Thyagaraja Nagar_mnow": 396,
+      "Brookfield_mnow": 761,
+      "JP nagar_mnow": 369,
+      "Sarjapur Road_mnow": 333
     },
-    total: 4041
+    total: 3423
   },
   {
     day: "Thursday",
@@ -2821,4 +2821,5 @@ function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 }
+
 
