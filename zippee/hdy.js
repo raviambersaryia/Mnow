@@ -871,12 +871,12 @@ const reportData = [
     day: "Wednesday",
     date: "1/7/2026",
     stores: {
-      Manikonda_mnow: 244,
-      Gachibowli_mnow: 398,
-      Attapur_mnow: 189,
-      Nizampet_mnow: 204
+      Manikonda_mnow: 238,
+      Gachibowli_mnow: 390,
+      Attapur_mnow: 185,
+      Nizampet_mnow: 200
     },
-    total: 1035
+    total: 1013
   },
   {
     day: "Thursday",
@@ -2169,4 +2169,5 @@ function excelDateToJSDate(serial) {
 function formatDate(dt) {
     const pad = n => n < 10 ? '0' + n : n;
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
+
 }
