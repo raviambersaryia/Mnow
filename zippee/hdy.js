@@ -871,7 +871,7 @@ const reportData = [
     day: "Wednesday",
     date: "1/7/2026",
     stores: {
-      Manikonda_mnow: 238,
+      Manikonda_mnow: 239,
       Gachibowli_mnow: 390,
       Attapur_mnow: 211,
       Nizampet_mnow: 220
@@ -2171,4 +2171,5 @@ function formatDate(dt) {
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 
 }
+
 
