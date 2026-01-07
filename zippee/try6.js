@@ -1447,7 +1447,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 461,
       "Brookfield_mnow": 1063,
       "JP nagar_mnow": 481,
-      "Sarjapur road_mnow": 469
+      "Sarjapur Road_mnow": 469
     },
     total: 4632
   },
@@ -1462,7 +1462,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 400,
       "Brookfield_mnow": 925,
       "JP nagar_mnow": 447,
-      "Sarjapur road_mnow": 402
+      "Sarjapur Road_mnow": 402
     },
     total: 4041
   },
@@ -1477,7 +1477,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 422,
       "Brookfield_mnow": 947,
       "JP nagar_mnow": 456,
-      "Sarjapur road_mnow": 464
+      "Sarjapur Road_mnow": 464
     },
     total: 4211
   },
@@ -1492,7 +1492,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 699,
       "Brookfield_mnow": 1630,
       "JP nagar_mnow": 821,
-      "Sarjapur road_mnow": 764
+      "Sarjapur Road_mnow": 764
     },
     total: 7341
   },
@@ -1507,7 +1507,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 762,
       "Brookfield_mnow": 1554,
       "JP nagar_mnow": 750,
-      "Sarjapur road_mnow": 731
+      "Sarjapur Road_mnow": 731
     },
     total: 7060
   },
@@ -1522,7 +1522,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 529,
       "Brookfield_mnow": 1306,
       "JP nagar_mnow": 639,
-      "Sarjapur road_mnow": 632
+      "Sarjapur Road_mnow": 632
     },
     total: 5865
   },
@@ -1537,7 +1537,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 432,
       "Brookfield_mnow": 964,
       "JP nagar_mnow": 465,
-      "Sarjapur road_mnow": 534
+      "Sarjapur Road_mnow": 534
     },
     total: 4564
   },
@@ -1552,7 +1552,7 @@ const reportData = [
       "Thyagaraja Nagar_mnow": 537,
       "Brookfield_mnow": 1238,
       "JP nagar_mnow": 560,
-      "Sarjapur road_mnow": 546
+      "Sarjapur Road_mnow": 546
     },
     total: 5362
   }
