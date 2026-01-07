@@ -873,8 +873,8 @@ const reportData = [
     stores: {
       Manikonda_mnow: 238,
       Gachibowli_mnow: 390,
-      Attapur_mnow: 185,
-      Nizampet_mnow: 200
+      Attapur_mnow: 211,
+      Nizampet_mnow: 220
     },
     total: 1013
   },
@@ -887,7 +887,7 @@ const reportData = [
       Attapur_mnow: 165,
       Nizampet_mnow: 224
     },
-    total: 1062
+    total: 1060
   },
   {
     day: "Friday",
@@ -2171,3 +2171,4 @@ function formatDate(dt) {
     return `${pad(dt.getMonth() + 1)}-${pad(dt.getDate())}-${dt.getFullYear()} ${pad(dt.getHours())}:${pad(dt.getMinutes())}`;
 
 }
+
